@@ -1,5 +1,19 @@
 # DPRK Sanctions Intelligence Monorepo
 
+## Why this app exists
+
+Network drift is a change in an entity's role in the sanctions graph over time. This repo measures drift across adjacent annual slices, where each slice is one year of report-derived edges.
+
+- embedding drift: movement in each entity's graph embedding from one year to the next.
+- neighbor drift: counterparties gained or lost.
+- centrality drift: change in betweenness importance.
+- community drift: whether the entity switches communities.
+- edge-neighborhood change: edge additions and removals around the node.
+
+A high score is a review flag, not a verdict.
+
+This project is built from the public foundations in [Black Knights and Dark Network](https://github.com/RANDCorporation/black-knights-and-dark-network/) and keeps source-first interpretation: manifest ID, date, and report URL before narrative.
+
 This repo is a public DPRK sanctions-intelligence toolkit with three pieces:
 - `apps/dashboard`: static analyst dashboard with inline guidance and a guided tour.
 - `packages/entity-resolution`: mention extraction, embedding, alias resolution, and review API.
