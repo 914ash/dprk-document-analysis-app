@@ -1,9 +1,34 @@
 # DPRK Sanctions Intelligence Monorepo
 
-This repo is a public DPRK sanctions-intelligence toolkit with three pieces:
+This repo is an implementation of network drift tracking in sanctions networks using three pieces:
 - `apps/dashboard`: static analyst dashboard with inline guidance and a guided tour.
 - `packages/entity-resolution`: mention extraction, embedding, alias resolution, and review API.
 - `packages/network-drift`: temporal graph analytics and drift scoring.
+
+## What is network drift?
+
+Network drift is a change in an entity’s role in the sanctions graph over time.
+This repo measures drift across adjacent annual slices, where each slice is one year of report-derived edges.
+
+- embedding drift: movement in each entity’s graph embedding from one year to the next.
+- neighbor drift: counterparties gained or lost.
+- centrality drift: change in betweenness importance.
+- community drift: whether the entity switches communities.
+- edge-neighborhood change: edge additions and removals around the node.
+
+
+## What drift means in practice
+
+Example:
+
+- 2022: Entity A connects mostly to shell trading nodes.
+- 2023: Entity A connects to maritime and finance nodes, and centrality rises.
+
+Read this as:
+- Counterparty behavior changed (neighbor drift up).
+- Bridge role strengthened (centrality up).
+- Possible operational shift if community also changes.
+
 
 ## Credits and data provenance
 
