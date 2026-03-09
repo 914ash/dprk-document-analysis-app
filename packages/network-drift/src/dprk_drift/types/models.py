@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import uuid
 from datetime import date
-from typing import Optional
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
@@ -31,7 +30,7 @@ class GraphNode(BaseModel):
         return v
 
     @model_validator(mode="after")
-    def validate_dates(self) -> "GraphNode":
+    def validate_dates(self) -> GraphNode:
         if self.first_seen > self.last_seen:
             raise ValueError(
                 f"first_seen ({self.first_seen}) must be <= last_seen ({self.last_seen})"
@@ -169,6 +168,6 @@ class DocumentRecord(BaseModel):
     title: str
     report_date: date
     source: str
-    url: Optional[str] = None
+    url: str | None = None
 
     model_config = ConfigDict(frozen=True)

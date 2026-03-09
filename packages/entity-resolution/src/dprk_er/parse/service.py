@@ -6,9 +6,7 @@ Uses PyMuPDF (fitz) for PDF text extraction.
 
 from __future__ import annotations
 
-import os
 from pathlib import Path
-from typing import Optional
 
 import structlog
 
@@ -89,7 +87,7 @@ class ParseService:
         logger.info("chunks_saved", doc_id=doc_id, rows=len(chunks), path=str(out_path))
         return str(out_path)
 
-    def load_chunks(self, doc_id: Optional[str] = None) -> list[TextChunk]:
+    def load_chunks(self, doc_id: str | None = None) -> list[TextChunk]:
         """Load TextChunks from parquet. If doc_id given, load just that doc."""
         import pandas as pd
 

@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import uuid
 from datetime import UTC, date, datetime
-from typing import Optional
 
 from pydantic import BaseModel, Field
 
@@ -68,7 +67,7 @@ class Mention(BaseModel):
     context_left: str = ""
     context_right: str = ""
     chunk_text: str = ""
-    embedding: Optional[list[float]] = None
+    embedding: list[float] | None = None
     model_name: str = ""
     extractor_name: str = ""
     extractor_label: str = ""

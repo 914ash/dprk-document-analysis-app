@@ -13,11 +13,10 @@ from __future__ import annotations
 import os
 from collections import defaultdict
 from pathlib import Path
-from typing import Optional
 
 import pandas as pd
-import plotly.graph_objects as go
 import plotly.express as px
+import plotly.graph_objects as go
 import structlog
 
 from dprk_drift.types.models import DriftScore, VizPoint
@@ -41,7 +40,7 @@ class VisualizeService:
     def plot_entity_trajectories(
         self,
         viz_points: dict[str, list[VizPoint]],
-        highlight_ids: Optional[list[str]] = None,
+        highlight_ids: list[str] | None = None,
     ) -> go.Figure:
         """Scatter plot showing entity positions across time slices.
 
@@ -83,7 +82,7 @@ class VisualizeService:
                     x=xs,
                     y=ys,
                     mode="lines",
-                    line=dict(color=line_color, width=1 if entity_id not in highlight_ids else 2),
+                    line={"color": line_color, "width": 1 if entity_id not in highlight_ids else 2},
                     showlegend=False,
                     hoverinfo="skip",
                     name=f"{entity_id}_line",
@@ -107,7 +106,7 @@ class VisualizeService:
                 f"Label: {label}<br>"
                 f"Slice: {slice_id}<br>"
                 f"Drift Score: {score:.3f}"
-                for eid, label, score in zip(entity_ids, labels, scores)
+                for eid, label, score in zip(entity_ids, labels, scores, strict=True)
             ]
 
             sizes = [
@@ -120,22 +119,19 @@ class VisualizeService:
                     x=xs,
                     y=ys,
                     mode="markers",
-                    marker=dict(
-                        size=sizes,
-                        color=scores,
-                        colorscale=DRIFT_COLORSCALE,
-                        cmin=0.0,
-                        cmax=1.0,
-                        showscale=(i == 0),
-                        colorbar=dict(
-                            title="Drift Score",
-                            thickness=15,
-                        ) if i == 0 else None,
-                        line=dict(
-                            color=["black" if eid in highlight_ids else "rgba(0,0,0,0.2)" for eid in entity_ids],
-                            width=[2 if eid in highlight_ids else 0.5 for eid in entity_ids],
-                        ),
-                    ),
+                    marker={
+                        "size": sizes,
+                        "color": scores,
+                        "colorscale": DRIFT_COLORSCALE,
+                        "cmin": 0.0,
+                        "cmax": 1.0,
+                        "showscale": i == 0,
+                        "colorbar": {"title": "Drift Score", "thickness": 15} if i == 0 else None,
+                        "line": {
+                            "color": ["black" if eid in highlight_ids else "rgba(0,0,0,0.2)" for eid in entity_ids],
+                            "width": [2 if eid in highlight_ids else 0.5 for eid in entity_ids],
+                        },
+                    },
                     text=hover_text,
                     hovertemplate="%{text}<extra></extra>",
                     name=f"Slice {slice_id}",
@@ -144,20 +140,17 @@ class VisualizeService:
             )
 
         fig.update_layout(
-            title=dict(
-                text="DPRK Network Entity Trajectories Across Time Slices",
-                font=dict(size=18),
-            ),
-            xaxis=dict(title="UMAP Dimension 1", showgrid=False, zeroline=False),
-            yaxis=dict(title="UMAP Dimension 2", showgrid=False, zeroline=False),
+            title={
+                "text": "DPRK Network Entity Trajectories Across Time Slices",
+                "font": {"size": 18},
+            },
+            xaxis={"title": "UMAP Dimension 1", "showgrid": False, "zeroline": False},
+            yaxis={"title": "UMAP Dimension 2", "showgrid": False, "zeroline": False},
             hovermode="closest",
             plot_bgcolor="#1a1a2e",
             paper_bgcolor="#16213e",
-            font=dict(color="#e0e0e0"),
-            legend=dict(
-                title="Time Slice",
-                bgcolor="rgba(0,0,0,0.3)",
-            ),
+            font={"color": "#e0e0e0"},
+            legend={"title": "Time Slice", "bgcolor": "rgba(0,0,0,0.3)"},
         )
 
         return fig
@@ -211,8 +204,8 @@ class VisualizeService:
                 y=max_scores,
                 mode="markers+lines",
                 name="Max Drift",
-                marker=dict(color="#e74c3c", size=8),
-                line=dict(color="#e74c3c", width=1, dash="dot"),
+                marker={"color": "#e74c3c", "size": 8},
+                line={"color": "#e74c3c", "width": 1, "dash": "dot"},
                 hovertemplate="Max: %{y:.3f}<extra></extra>",
             )
         )
@@ -223,8 +216,8 @@ class VisualizeService:
                 y=min_scores,
                 mode="markers+lines",
                 name="Min Drift",
-                marker=dict(color="#2ecc71", size=8),
-                line=dict(color="#2ecc71", width=1, dash="dot"),
+                marker={"color": "#2ecc71", "size": 8},
+                line={"color": "#2ecc71", "width": 1, "dash": "dot"},
                 hovertemplate="Min: %{y:.3f}<extra></extra>",
             )
         )
@@ -233,11 +226,11 @@ class VisualizeService:
             title="Cluster-Level Drift by Transition Period",
             xaxis_title="Transition (Previous Slice → Current Slice)",
             yaxis_title="Composite Drift Score",
-            yaxis=dict(range=[0, 1.05]),
+            yaxis={"range": [0, 1.05]},
             plot_bgcolor="#1a1a2e",
             paper_bgcolor="#16213e",
-            font=dict(color="#e0e0e0"),
-            legend=dict(bgcolor="rgba(0,0,0,0.3)"),
+            font={"color": "#e0e0e0"},
+            legend={"bgcolor": "rgba(0,0,0,0.3)"},
             bargap=0.3,
         )
 
@@ -265,11 +258,6 @@ class VisualizeService:
 
         entity_ids = [f"{s.entity_id}<br>({s.slice_id_prev}→{s.slice_id_curr})" for s in sorted_scores]
         composites = [s.composite_score for s in sorted_scores]
-        emb_drifts = [s.embedding_drift for s in sorted_scores]
-        nbr_drifts = [s.neighbor_drift for s in sorted_scores]
-        ctr_drifts = [s.centrality_drift for s in sorted_scores]
-        comm_drifts = [s.community_drift for s in sorted_scores]
-
         hover_text = [
             f"Entity: {s.entity_id}<br>"
             f"Transition: {s.slice_id_prev}→{s.slice_id_curr}<br>"
@@ -304,12 +292,12 @@ class VisualizeService:
         fig.update_layout(
             title=f"Top {min(top_n, len(sorted_scores))} Highest-Drifting Entities",
             xaxis_title="Composite Drift Score",
-            xaxis=dict(range=[0, 1.1]),
+            xaxis={"range": [0, 1.1]},
             yaxis_title="Entity ID (Transition)",
-            yaxis=dict(autorange="reversed"),
+            yaxis={"autorange": "reversed"},
             plot_bgcolor="#1a1a2e",
             paper_bgcolor="#16213e",
-            font=dict(color="#e0e0e0"),
+            font={"color": "#e0e0e0"},
             height=max(400, top_n * 30),
         )
 
@@ -349,10 +337,7 @@ class VisualizeService:
                     y=[s.composite_score for s in control_scores],
                     mode="markers",
                     name="Stable Entities",
-                    marker=dict(
-                        color="rgba(100,100,100,0.3)",
-                        size=5,
-                    ),
+                    marker={"color": "rgba(100,100,100,0.3)", "size": 5},
                     hovertemplate=(
                         "Entity: %{customdata[0]}<br>"
                         "Centrality Drift: %{x:.3f}<br>"
@@ -381,20 +366,20 @@ class VisualizeService:
                     y=[s.composite_score for s in bridge_scores],
                     mode="markers+text",
                     name="Bridge Alerts",
-                    marker=dict(
-                        color=[s.composite_score for s in bridge_scores],
-                        colorscale=DRIFT_COLORSCALE,
-                        cmin=0.0,
-                        cmax=1.0,
-                        size=12,
-                        symbol="diamond",
-                        line=dict(color="#e74c3c", width=2),
-                        showscale=True,
-                        colorbar=dict(title="Composite Score"),
-                    ),
+                    marker={
+                        "color": [s.composite_score for s in bridge_scores],
+                        "colorscale": DRIFT_COLORSCALE,
+                        "cmin": 0.0,
+                        "cmax": 1.0,
+                        "size": 12,
+                        "symbol": "diamond",
+                        "line": {"color": "#e74c3c", "width": 2},
+                        "showscale": True,
+                        "colorbar": {"title": "Composite Score"},
+                    },
                     text=[s.entity_id for s in bridge_scores],
                     textposition="top center",
-                    textfont=dict(size=9, color="#e74c3c"),
+                    textfont={"size": 9, "color": "#e74c3c"},
                     hovertext=hover_text,
                     hovertemplate="%{hovertext}<extra></extra>",
                     customdata=[[s.entity_id, s.slice_id_prev, s.slice_id_curr] for s in bridge_scores],
@@ -414,12 +399,12 @@ class VisualizeService:
             title=f"Bridge-Emergence Alerts (Centrality Drift ≥ {centrality_threshold:.2f})",
             xaxis_title="Centrality Drift (|ΔBetweenness|)",
             yaxis_title="Composite Drift Score",
-            xaxis=dict(range=[-0.02, 1.05]),
-            yaxis=dict(range=[-0.02, 1.05]),
+            xaxis={"range": [-0.02, 1.05]},
+            yaxis={"range": [-0.02, 1.05]},
             plot_bgcolor="#1a1a2e",
             paper_bgcolor="#16213e",
-            font=dict(color="#e0e0e0"),
-            legend=dict(bgcolor="rgba(0,0,0,0.3)"),
+            font={"color": "#e0e0e0"},
+            legend={"bgcolor": "rgba(0,0,0,0.3)"},
         )
 
         return fig
@@ -429,7 +414,7 @@ class VisualizeService:
         output_dir: str,
         viz_points: dict[str, list[VizPoint]],
         drift_scores: list[DriftScore],
-        highlight_ids: Optional[list[str]] = None,
+        highlight_ids: list[str] | None = None,
         top_n: int = 20,
         centrality_threshold: float = 0.3,
     ) -> dict[str, str]:

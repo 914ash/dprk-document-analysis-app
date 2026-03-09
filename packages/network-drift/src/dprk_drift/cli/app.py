@@ -20,7 +20,6 @@ import os
 import subprocess
 import sys
 from pathlib import Path
-from typing import Optional
 
 import structlog
 import typer
@@ -84,7 +83,7 @@ def build_slices(
         "--fixture",
         help="Use fixture data for fast testing",
     ),
-    output_dir: Optional[str] = typer.Option(
+    output_dir: str | None = typer.Option(
         None,
         "--output-dir",
         help="Override output directory (default: {data_dir}/interim/slices)",
@@ -134,10 +133,10 @@ def build_slices(
         slice_svc.save_slices(slices, str(out_dir))
 
         typer.echo(f"✓ Built {len(slices)} annual slices → {out_dir}")
-    except Exception as e:
-        logger.error("build_slices_failed", error=str(e))
-        typer.echo(f"✗ build-slices failed: {e}", err=True)
-        raise typer.Exit(code=1)
+    except Exception as err:
+        logger.error("build_slices_failed", error=str(err))
+        typer.echo(f"✗ build-slices failed: {err}", err=True)
+        raise typer.Exit(code=1) from err
 
 
 @app.command(name="train-embeddings")
@@ -153,12 +152,12 @@ def train_embeddings(
         "--fixture",
         help="Use fixture data for fast testing",
     ),
-    slices_dir: Optional[str] = typer.Option(
+    slices_dir: str | None = typer.Option(
         None,
         "--slices-dir",
         help="Override slices input directory",
     ),
-    output_dir: Optional[str] = typer.Option(
+    output_dir: str | None = typer.Option(
         None,
         "--output-dir",
         help="Override embeddings output directory",
@@ -199,10 +198,10 @@ def train_embeddings(
 
         total = sum(len(v) for v in all_embeddings.values())
         typer.echo(f"✓ Generated {total} embeddings across {len(all_embeddings)} slices → {out_dir}")
-    except Exception as e:
-        logger.error("train_embeddings_failed", error=str(e))
-        typer.echo(f"✗ train-embeddings failed: {e}", err=True)
-        raise typer.Exit(code=1)
+    except Exception as err:
+        logger.error("train_embeddings_failed", error=str(err))
+        typer.echo(f"✗ train-embeddings failed: {err}", err=True)
+        raise typer.Exit(code=1) from err
 
 
 @app.command(name="reduce-umap")
@@ -218,12 +217,12 @@ def reduce_umap(
         "--fixture",
         help="Use fixture data for fast testing",
     ),
-    embeddings_dir: Optional[str] = typer.Option(
+    embeddings_dir: str | None = typer.Option(
         None,
         "--embeddings-dir",
         help="Override embeddings input directory",
     ),
-    output_dir: Optional[str] = typer.Option(
+    output_dir: str | None = typer.Option(
         None,
         "--output-dir",
         help="Override viz points output directory",
@@ -244,7 +243,6 @@ def reduce_umap(
 
     from dprk_drift.embed.service import EmbedService
     from dprk_drift.reduce.service import ReduceService
-    from dprk_drift.types.models import EmbeddingConfig
 
     data_path = Path(data_dir)
     in_dir = Path(embeddings_dir) if embeddings_dir else data_path / "interim" / "embeddings"
@@ -278,10 +276,10 @@ def reduce_umap(
 
         total = sum(len(v) for v in viz_points.values())
         typer.echo(f"✓ Reduced {total} points to 2D across {len(viz_points)} slices → {out_dir}")
-    except Exception as e:
-        logger.error("reduce_umap_failed", error=str(e))
-        typer.echo(f"✗ reduce-umap failed: {e}", err=True)
-        raise typer.Exit(code=1)
+    except Exception as err:
+        logger.error("reduce_umap_failed", error=str(err))
+        typer.echo(f"✗ reduce-umap failed: {err}", err=True)
+        raise typer.Exit(code=1) from err
 
 
 @app.command(name="score-drift")
@@ -297,17 +295,17 @@ def score_drift(
         "--fixture",
         help="Use fixture data for fast testing",
     ),
-    slices_dir: Optional[str] = typer.Option(
+    slices_dir: str | None = typer.Option(
         None,
         "--slices-dir",
         help="Override slices input directory",
     ),
-    embeddings_dir: Optional[str] = typer.Option(
+    embeddings_dir: str | None = typer.Option(
         None,
         "--embeddings-dir",
         help="Override embeddings input directory",
     ),
-    output_path: Optional[str] = typer.Option(
+    output_path: str | None = typer.Option(
         None,
         "--output-path",
         help="Override drift scores output parquet path",
@@ -361,10 +359,10 @@ def score_drift(
             )
 
         typer.echo(f"✓ Computed {len(scores)} drift scores → {scores_out}")
-    except Exception as e:
-        logger.error("score_drift_failed", error=str(e))
-        typer.echo(f"✗ score-drift failed: {e}", err=True)
-        raise typer.Exit(code=1)
+    except Exception as err:
+        logger.error("score_drift_failed", error=str(err))
+        typer.echo(f"✗ score-drift failed: {err}", err=True)
+        raise typer.Exit(code=1) from err
 
 
 @app.command(name="render-viz")
@@ -380,17 +378,17 @@ def render_viz(
         "--fixture",
         help="Use fixture data for fast testing",
     ),
-    viz_points_dir: Optional[str] = typer.Option(
+    viz_points_dir: str | None = typer.Option(
         None,
         "--viz-points-dir",
         help="Override viz points input directory",
     ),
-    scores_path: Optional[str] = typer.Option(
+    scores_path: str | None = typer.Option(
         None,
         "--scores-path",
         help="Override drift scores parquet path",
     ),
-    output_dir: Optional[str] = typer.Option(
+    output_dir: str | None = typer.Option(
         None,
         "--output-dir",
         help="Override visualization HTML output directory",
@@ -449,10 +447,10 @@ def render_viz(
         typer.echo(f"✓ Generated {len(saved)} visualizations → {out_dir}")
         for name, path in saved.items():
             typer.echo(f"  • {name}: {path}")
-    except Exception as e:
-        logger.error("render_viz_failed", error=str(e))
-        typer.echo(f"✗ render-viz failed: {e}", err=True)
-        raise typer.Exit(code=1)
+    except Exception as err:
+        logger.error("render_viz_failed", error=str(err))
+        typer.echo(f"✗ render-viz failed: {err}", err=True)
+        raise typer.Exit(code=1) from err
 
 
 @app.command(name="run-evals")

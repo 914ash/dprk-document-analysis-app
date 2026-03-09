@@ -42,12 +42,14 @@ This project is built from the public foundations in [Black Knights and Dark Net
 2. **Mention extraction**
    Extract entities and relation hints from each report.
 3. **Entity resolution and aliasing**
+   This is the entity resolution/aliasing stage.
    Cluster mentions and score likely matches.
 4. **Edge construction**
    Build graph edges with node/edge provenance.
 5. **Annual slices**
    Split edges into adjacent yearly snapshots.
 6. **Embeddings and drift scoring**
+   This is the embeddings/scoring stage.
    Compute embeddings and the five drift signals for each transition.
 7. **Drift ranking**
    Rank entities by composite score for triage.

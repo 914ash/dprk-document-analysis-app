@@ -9,15 +9,15 @@ from __future__ import annotations
 import json
 import os
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 
 import lancedb
 import pyarrow as pa
 import structlog
 
 from dprk_er.types.models import (
-    CandidateEvidence,
     CandidateCluster,
+    CandidateEvidence,
     CandidatePair,
     Document,
     Mention,
@@ -88,7 +88,7 @@ CANDIDATE_CLUSTERS_SCHEMA = pa.schema(
 class LanceDBStore:
     """Opens / creates a LanceDB database and provides typed upsert/query methods."""
 
-    def __init__(self, db_path: Optional[str] = None) -> None:
+    def __init__(self, db_path: str | None = None) -> None:
         path = db_path or os.environ.get("LANCEDB_PATH", "data/processed/lancedb")
         Path(path).mkdir(parents=True, exist_ok=True)
         self._db = lancedb.connect(path)
@@ -144,7 +144,7 @@ class LanceDBStore:
         tbl.add(rows)
         logger.info("documents_upserted", count=len(rows))
 
-    def get_documents(self, doc_id: Optional[str] = None) -> list[Document]:
+    def get_documents(self, doc_id: str | None = None) -> list[Document]:
         rows = self._table_to_dicts("documents")
         if doc_id:
             rows = [r for r in rows if r["doc_id"] == doc_id]
@@ -201,8 +201,8 @@ class LanceDBStore:
 
     def get_mentions(
         self,
-        doc_id: Optional[str] = None,
-        entity_type: Optional[str] = None,
+        doc_id: str | None = None,
+        entity_type: str | None = None,
     ) -> list[Mention]:
         rows = self._table_to_dicts("mentions")
         if doc_id:
@@ -266,7 +266,7 @@ class LanceDBStore:
         tbl.add(rows)
         logger.info("candidates_upserted", count=len(rows))
 
-    def get_candidates(self, status: Optional[str] = None) -> list[CandidatePair]:
+    def get_candidates(self, status: str | None = None) -> list[CandidatePair]:
         rows = self._table_to_dicts("candidate_pairs")
         if status:
             rows = [r for r in rows if r["status"] == status]
@@ -310,7 +310,7 @@ class LanceDBStore:
         tbl.add(rows)
         logger.info("clusters_upserted", count=len(rows))
 
-    def get_clusters(self, status: Optional[str] = None) -> list[CandidateCluster]:
+    def get_clusters(self, status: str | None = None) -> list[CandidateCluster]:
         rows = self._table_to_dicts("candidate_clusters")
         if status:
             rows = [r for r in rows if r["status"] == status]

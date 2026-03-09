@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import os
 from contextlib import asynccontextmanager
-from typing import AsyncGenerator, Optional
+from typing import TYPE_CHECKING
 
 import structlog
 from fastapi import FastAPI, HTTPException, Query
@@ -17,14 +17,17 @@ from dprk_er.review.service import ReviewService
 from dprk_er.storage.lancedb_store import LanceDBStore
 from dprk_er.types.models import CandidatePair, Mention, ReviewDecision
 
+if TYPE_CHECKING:
+    from collections.abc import AsyncGenerator
+
 logger = structlog.get_logger(__name__)
 
 # ---------------------------------------------------------------------------
 # Application state
 # ---------------------------------------------------------------------------
 
-_store: Optional[LanceDBStore] = None
-_review: Optional[ReviewService] = None
+_store: LanceDBStore | None = None
+_review: ReviewService | None = None
 
 
 @asynccontextmanager
@@ -71,8 +74,8 @@ async def health() -> dict[str, str]:
 
 @app.get("/mentions", response_model=list[Mention], tags=["mentions"])
 async def list_mentions(
-    doc_id: Optional[str] = Query(None, description="Filter by document ID"),
-    entity_type: Optional[str] = Query(None, description="Filter by entity type (ORG/PERSON/VESSEL/LOCATION)"),
+    doc_id: str | None = Query(None, description="Filter by document ID"),
+    entity_type: str | None = Query(None, description="Filter by entity type (ORG/PERSON/VESSEL/LOCATION)"),
 ) -> list[Mention]:
     """List entity mentions, optionally filtered by doc_id or entity_type."""
     store = _get_store()
@@ -81,7 +84,7 @@ async def list_mentions(
 
 @app.get("/candidates", response_model=list[CandidatePair], tags=["candidates"])
 async def list_candidates(
-    status: Optional[str] = Query(None, description="Filter by status (pending/approved/rejected)"),
+    status: str | None = Query(None, description="Filter by status (pending/approved/rejected)"),
 ) -> list[CandidatePair]:
     """List candidate alias pairs, optionally filtered by status."""
     store = _get_store()

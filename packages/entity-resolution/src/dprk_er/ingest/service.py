@@ -7,10 +7,8 @@ from __future__ import annotations
 
 import csv
 import hashlib
-import os
 import time
 from pathlib import Path
-from typing import Optional
 
 import httpx
 import structlog
@@ -120,12 +118,14 @@ class IngestService:
         headers = {
             "User-Agent": "DPRK-ER/0.1 (research; UN-sanctions-data)"
         }
-        with httpx.Client(follow_redirects=True, timeout=120.0) as client:
-            with client.stream("GET", url, headers=headers) as response:
-                response.raise_for_status()
-                with open(target, "wb") as fh:
-                    for chunk in response.iter_bytes(chunk_size=_CHUNK_SIZE):
-                        fh.write(chunk)
+        with (
+            httpx.Client(follow_redirects=True, timeout=120.0) as client,
+            client.stream("GET", url, headers=headers) as response,
+            open(target, "wb") as fh,
+        ):
+            response.raise_for_status()
+            for chunk in response.iter_bytes(chunk_size=_CHUNK_SIZE):
+                fh.write(chunk)
 
     # ------------------------------------------------------------------
     # Checksum

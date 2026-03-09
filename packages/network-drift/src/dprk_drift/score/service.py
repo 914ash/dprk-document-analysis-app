@@ -17,7 +17,6 @@ from __future__ import annotations
 import os
 from itertools import pairwise
 from pathlib import Path
-from typing import Optional
 
 import networkx as nx
 import numpy as np
@@ -208,7 +207,7 @@ class ScoreService:
         embeddings_curr: list[SliceEmbedding],
         graph_prev: nx.Graph,
         graph_curr: nx.Graph,
-        weights: Optional[dict[str, float]] = None,
+        weights: dict[str, float] | None = None,
     ) -> DriftScore:
         """Combine all drift signals into a composite DriftScore.
 
@@ -281,7 +280,7 @@ class ScoreService:
         self,
         slices: dict[str, nx.Graph],
         embeddings: dict[str, list[SliceEmbedding]],
-        weights: Optional[dict[str, float]] = None,
+        weights: dict[str, float] | None = None,
     ) -> list[DriftScore]:
         """Score all entities across all adjacent slice pairs.
 
@@ -396,7 +395,7 @@ class ScoreService:
         return scores
 
     def get_top_drifters(
-        self, scores: list[DriftScore], top_n: int = 20, transition: Optional[str] = None
+        self, scores: list[DriftScore], top_n: int = 20, transition: str | None = None
     ) -> list[DriftScore]:
         """Get the top N highest drifting entities.
 

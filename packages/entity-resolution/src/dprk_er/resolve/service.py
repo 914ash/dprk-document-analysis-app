@@ -12,7 +12,6 @@ Algorithm:
 from __future__ import annotations
 
 import math
-from typing import Optional
 
 import structlog
 
@@ -88,7 +87,7 @@ class ResolveService:
         self,
         m1: Mention,
         m2: Mention,
-        form_doc_counts: Optional[dict[tuple[str, str], int]] = None,
+        form_doc_counts: dict[tuple[str, str], int] | None = None,
     ) -> tuple[float, list[str], CandidateEvidence]:
         """Score a mention pair and return (score, reasons, evidence).
 
@@ -198,7 +197,7 @@ class ResolveService:
             groups.setdefault(root, []).append(mid)
 
         clusters: list[CandidateCluster] = []
-        for root, members in groups.items():
+        for _root, members in groups.items():
             if len(members) < 2:
                 continue
             # Compute mean pair score within cluster
@@ -228,7 +227,7 @@ class ResolveService:
         """Compute cosine similarity between two vectors."""
         if len(a) != len(b):
             return 0.0
-        dot = sum(x * y for x, y in zip(a, b))
+        dot = sum(x * y for x, y in zip(a, b, strict=True))
         norm_a = math.sqrt(sum(x * x for x in a))
         norm_b = math.sqrt(sum(y * y for y in b))
         if norm_a == 0.0 or norm_b == 0.0:

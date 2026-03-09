@@ -6,11 +6,12 @@ Architecture: may import from dprk_er.types only.
 from __future__ import annotations
 
 import os
-from typing import Optional
+from typing import TYPE_CHECKING
 
 import structlog
 
-from dprk_er.types.models import Mention
+if TYPE_CHECKING:
+    from dprk_er.types.models import Mention
 
 logger = structlog.get_logger(__name__)
 
@@ -21,14 +22,16 @@ _DEFAULT_BATCH_SIZE = 64
 class EmbedService:
     """Embeds entity mentions using a sentence-transformers model."""
 
-    def __init__(self, model_name: Optional[str] = None) -> None:
+    def __init__(self, model_name: str | None = None) -> None:
         self.model_name = model_name or os.environ.get("EMBEDDING_MODEL", _DEFAULT_MODEL)
-        self._model: Optional[object] = None  # Lazy-loaded
+        self._model: object | None = None  # Lazy-loaded
 
     def _get_model(self) -> object:
         if self._model is None:
             try:
-                from sentence_transformers import SentenceTransformer  # type: ignore[import-untyped]
+                from sentence_transformers import (
+                    SentenceTransformer,  # type: ignore[import-untyped]
+                )
 
                 self._model = SentenceTransformer(self.model_name)
                 logger.info("embedding_model_loaded", model=self.model_name)
@@ -75,7 +78,6 @@ class EmbedService:
         texts = [self._build_input_text(m) for m in mentions]
 
         # Encode all in one call (sentence-transformers handles internal batching)
-        import numpy as np  # type: ignore[import-untyped]
         vectors = model.encode(  # type: ignore[union-attr]
             texts,
             batch_size=batch_size,
@@ -84,7 +86,7 @@ class EmbedService:
         )
 
         embedded: list[Mention] = []
-        for mention, vec in zip(mentions, vectors):
+        for mention, vec in zip(mentions, vectors, strict=True):
             embedded.append(
                 mention.model_copy(
                     update={
