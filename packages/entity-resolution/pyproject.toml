@@ -1,0 +1,71 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dprk-er"
+version = "0.1.0"
+description = "DPRK Entity Resolution Engine – ingests sanctions-report PDFs, extracts and embeds entity mentions, proposes aliases, and exposes an analyst review workflow."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "lancedb>=0.6.0",
+    "gliner>=0.2.21",
+    "pydantic>=2.0",
+    "pandas>=2.0",
+    "pyarrow>=14.0",
+    "sentence-transformers>=2.7",
+    "spacy>=3.7",
+    "transformers>=4.45",
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "typer[all]>=0.12",
+    "structlog>=24.0",
+    "httpx>=0.27",
+    "pymupdf>=1.24",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.4",
+    "mypy>=1.10",
+
+]
+
+[project.scripts]
+dprk-er = "dprk_er.cli.app:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dprk_er"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "evals"]
+asyncio_mode = "auto"
+markers = [
+    "ingest: ingest eval suite",
+    "schema: schema validation eval suite",
+    "resolution: entity resolution eval suite",
+    "regression: regression eval suite",
+    "structural: structural / layer-order tests",
+    "unit: unit tests",
+    "integration: integration tests",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "C4", "SIM", "TCH"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+warn_return_any = false
+mypy_path = "src"

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DPRK SENTINEL — Sanctions Intelligence Dashboard</title>
+<meta name="description" content="Intelligence analysis dashboard for DPRK sanctions entity resolution and network drift analysis">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app" id="app">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <!-- Geometric network node SVG logo -->
+      <svg class="sidebar-logo" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="DPRK Sentinel Logo">
+        <circle cx="14" cy="6" r="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <circle cx="6" cy="20" r="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <circle cx="22" cy="20" r="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <circle cx="22" cy="11" r="2" stroke="currentColor" stroke-width="1.2" fill="currentColor" opacity="0.3"/>
+        <circle cx="6" cy="11" r="2" stroke="currentColor" stroke-width="1.2" fill="currentColor" opacity="0.3"/>
+        <line x1="14" y1="9" x2="6" y2="17" stroke="currentColor" stroke-width="1.2"/>
+        <line x1="14" y1="9" x2="22" y2="17" stroke="currentColor" stroke-width="1.2"/>
+        <line x1="9" y1="20" x2="19" y2="20" stroke="currentColor" stroke-width="1.2"/>
+        <line x1="14" y1="6" x2="22" y2="11" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+        <line x1="14" y1="6" x2="6" y2="11" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+        <line x1="6" y1="13" x2="6" y2="17" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+        <line x1="22" y1="13" x2="22" y2="17" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+      </svg>
+      <span class="sidebar-title">DPRK Sentinel</span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-item active" data-tab="overview">
+        <span class="nav-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="10" y="1" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="1" y="10" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="10" y="10" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+        </span>
+        <span class="nav-label">Overview</span>
+      </div>
+      <div class="nav-item" data-tab="entity-resolution">
+        <span class="nav-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="6" cy="7" r="3" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="7" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M1 16c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="currentColor" stroke-width="1.4" fill="none"/><path d="M9 16c0-2.8 1.3-5 3-5s3 2.2 3 5" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+        </span>
+        <span class="nav-label">Entity Resolution</span>
+      </div>
+      <div class="nav-item" data-tab="network-drift">
+        <span class="nav-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="2" stroke="currentColor" stroke-width="1.4"/><circle cx="3" cy="4" r="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="15" cy="4" r="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="3" cy="14" r="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="15" cy="14" r="1.5" stroke="currentColor" stroke-width="1.2"/><line x1="9" y1="7" x2="4" y2="5" stroke="currentColor" stroke-width="1"/><line x1="9" y1="7" x2="14" y2="5" stroke="currentColor" stroke-width="1"/><line x1="9" y1="11" x2="4" y2="13" stroke="currentColor" stroke-width="1"/><line x1="9" y1="11" x2="14" y2="13" stroke="currentColor" stroke-width="1"/></svg>
+        </span>
+        <span class="nav-label">Network Drift</span>
+      </div>
+      <div class="nav-item" data-tab="review-queue">
+        <span class="nav-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="nav-label">Review Queue</span>
+      </div>
+      <div class="nav-item" data-tab="provenance">
+        <span class="nav-icon">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 2h8l4 4v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4"/><path d="M11 2v4h4" stroke="currentColor" stroke-width="1.4"/><line x1="5" y1="10" x2="13" y2="10" stroke="currentColor" stroke-width="1.2"/><line x1="5" y1="13" x2="10" y2="13" stroke="currentColor" stroke-width="1.2"/></svg>
+        </span>
+        <span class="nav-label">Provenance</span>
+      </div>
+    </nav>
+
+    <div class="sidebar-toggle">
+      <button id="sidebar-toggle-btn" aria-label="Toggle sidebar">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M12 4L7 9l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <div class="sidebar-footer">
+      <span>Public analyst release - methodology inline</span>
+    </div>
+  </aside>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header-left">
+      <span class="status-pill">
+        <span class="status-dot"></span>
+        Pipeline: Operational
+      </span>
+    </div>
+    <div class="header-right">
+      <button class="help-launch" id="guided-tour-start" aria-label="Open analyst tour">
+        Analyst Tour
+      </button>
+      <span class="header-date" id="header-date"></span>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" id="theme-icon-dark">
+          <path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 12.5a5.5 5.5 0 010-11v11z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main" id="main-content">
+
+    <!-- ======== TAB: OVERVIEW ======== -->
+    <section class="tab-panel active" id="tab-overview">
+      <h2 class="section-title">Intelligence Overview</h2>
+      <div class="guidance-rail" data-guidance-for="overview"></div>
+
+      <div class="kpi-grid" id="kpi-grid">
+        <!-- KPI cards injected by JS -->
+      </div>
+
+      <div class="charts-row">
+        <div class="chart-card">
+          <div class="chart-header">
+            <div>
+              <div class="chart-title">Entity Type Distribution</div>
+              <div class="chart-subtitle">Breakdown by category</div>
+            </div>
+          </div>
+          <div class="chart-body">
+            <canvas id="chart-entity-types"></canvas>
+          </div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-header">
+            <div>
+              <div class="chart-title">Network Growth</div>
+              <div class="chart-subtitle">Edge count per network slice</div>
+            </div>
+          </div>
+          <div class="chart-body">
+            <canvas id="chart-network-growth"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-card">
+        <div class="table-header">
+          <span class="table-title">Top Drifting Entities</span>
+          <span class="text-2xs text-muted">Ranked by maximum composite drift score</span>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table" id="table-top-drifters">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Entity</th>
+                <th>Type</th>
+                <th>Max Score</th>
+                <th>Transition</th>
+                <th>Drift Trend</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== TAB: ENTITY RESOLUTION ======== -->
+    <section class="tab-panel" id="tab-entity-resolution">
+      <h2 class="section-title">Entity Resolution</h2>
+      <div class="guidance-rail" data-guidance-for="entity-resolution"></div>
+
+      <div class="split-view">
+        <div class="split-panel">
+          <div class="panel-header">Mentions (click to view aliases)</div>
+          <div class="table-wrap">
+            <table class="data-table" id="table-mentions">
+              <thead>
+                <tr>
+                  <th>Entity</th>
+                  <th>Type</th>
+                  <th>Document</th>
+                  <th>Page</th>
+                  <th>Context</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="split-panel">
+          <div class="panel-header">Alias Candidates</div>
+          <div class="panel-body" id="alias-panel">
+            <div class="panel-empty">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.5" opacity="0.3"/><path d="M13 13l6 6M19 13l-6 6" stroke="currentColor" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/></svg>
+              <span>Select a mention to view alias candidates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-card" style="max-width: 600px;">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">Alias Resolution Status</div>
+            <div class="chart-subtitle">Approved / Pending / Rejected</div>
+          </div>
+        </div>
+        <div class="chart-body" style="height: 200px;">
+          <canvas id="chart-alias-status"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== TAB: NETWORK DRIFT ======== -->
+    <section class="tab-panel" id="tab-network-drift">
+      <h2 class="section-title">Network Drift Analysis</h2>
+      <div class="guidance-rail" data-guidance-for="network-drift"></div>
+
+      <!-- Force-Directed Graph -->
+      <div class="graph-container">
+        <div class="graph-controls">
+          <label for="graph-year-select">Network Slice:</label>
+          <select id="graph-year-select">
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024" selected>2024</option>
+          </select>
+          <span class="text-2xs text-muted" id="graph-stats"></span>
+        </div>
+        <div id="network-graph"></div>
+        <div class="graph-tooltip" id="graph-tooltip"></div>
+        <div class="graph-legend">
+          <div class="legend-item"><span class="legend-dot" style="background:var(--entity-org)"></span> ORG</div>
+          <div class="legend-item"><span class="legend-dot" style="background:var(--entity-person)"></span> PERSON</div>
+          <div class="legend-item"><span class="legend-dot" style="background:var(--entity-vessel)"></span> VESSEL</div>
+          <div class="legend-item"><span class="legend-dot" style="background:var(--entity-location)"></span> LOCATION</div>
+        </div>
+      </div>
+
+      <!-- UMAP Scatter -->
+      <div class="charts-row">
+        <div class="chart-card full-width">
+          <div class="chart-header">
+            <div>
+              <div class="chart-title">UMAP Embedding Space</div>
+              <div class="chart-subtitle">Entity positions across network slices (2020-2024)</div>
+            </div>
+          </div>
+          <div class="chart-body umap-container" id="umap-scatter"></div>
+        </div>
+      </div>
+
+      <!-- Drift Heatmap -->
+      <div class="heatmap-card">
+        <div class="table-header">
+          <span class="table-title">Drift Score Heatmap</span>
+          <span class="text-2xs text-muted">Top 15 entities by composite drift score</span>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table heatmap-table" id="table-heatmap">
+            <thead>
+              <tr>
+                <th>Entity</th>
+                <th>2020→2021</th>
+                <th>2021→2022</th>
+                <th>2022→2023</th>
+                <th>2023→2024</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== TAB: REVIEW QUEUE ======== -->
+    <section class="tab-panel" id="tab-review-queue">
+      <h2 class="section-title">Review Queue</h2>
+      <div class="guidance-rail" data-guidance-for="review-queue"></div>
+
+      <div class="review-grid" id="review-grid">
+        <!-- Review cards injected by JS -->
+      </div>
+
+      <div class="table-card">
+        <div class="table-header">
+          <span class="table-title">Recent Decisions</span>
+          <span class="text-2xs text-muted">Completed analyst reviews</span>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table" id="table-decisions">
+            <thead>
+              <tr>
+                <th>Decision ID</th>
+                <th>Candidate</th>
+                <th>Reviewer</th>
+                <th>Decision</th>
+                <th>Notes</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== TAB: PROVENANCE ======== -->
+    <section class="tab-panel" id="tab-provenance">
+      <h2 class="section-title">Document Provenance</h2>
+      <div class="guidance-rail" data-guidance-for="provenance"></div>
+
+      <div class="table-card">
+        <div class="table-header">
+          <span class="table-title">Document Manifest</span>
+          <span class="text-2xs text-muted">Source reports ingested into pipeline</span>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table" id="table-manifest">
+            <thead>
+              <tr>
+                <th>Doc ID</th>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="chart-card full-width">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title">Report Timeline</div>
+            <div class="chart-subtitle">Click a report to see extracted mentions</div>
+          </div>
+        </div>
+        <div class="chart-body">
+          <div class="timeline" id="provenance-timeline">
+            <div class="timeline-line"></div>
+            <div class="timeline-items" id="timeline-items"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="doc-detail" id="doc-detail">
+        <div class="doc-detail-header">
+          <div>
+            <div class="doc-detail-title" id="doc-detail-title"></div>
+            <div class="text-2xs text-muted" id="doc-detail-meta"></div>
+          </div>
+          <button class="doc-detail-close" id="doc-detail-close" aria-label="Close">×</button>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table" id="table-doc-mentions">
+            <thead>
+              <tr>
+                <th>Mention</th>
+                <th>Type</th>
+                <th>Page</th>
+                <th>Context</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="guided-tour" id="guided-tour" aria-hidden="true">
+  <div class="guided-tour-backdrop" id="guided-tour-close"></div>
+  <div class="guided-tour-panel">
+    <div class="guided-tour-eyebrow">Guided Analyst Tour</div>
+    <div class="guided-tour-title" id="guided-tour-title"></div>
+    <div class="guided-tour-body" id="guided-tour-body"></div>
+    <div class="guided-tour-progress" id="guided-tour-progress"></div>
+    <div class="guided-tour-actions">
+      <button class="guided-tour-btn secondary" id="guided-tour-prev">Back</button>
+      <button class="guided-tour-btn" id="guided-tour-next">Next</button>
+    </div>
+  </div>
+</div>
+<!-- External Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
+<!-- Application -->
+<script src="app.js"></script>
+
+</body>
+</html>
+
+
+

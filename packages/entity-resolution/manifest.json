@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "drive_id": "8546cdad-dce4-4309-b6d2-36911d908570",
+  "name": "dprk-entity-resolution",
+  "description": "DPRK Entity Resolution Engine – complete Python application for ingesting UN sanctions-report PDFs, extracting entity mentions, embedding them in LanceDB, proposing alias pairs, and providing analyst review workflow.",
+  "tags": [
+    "dprk",
+    "entity-resolution",
+    "nlp",
+    "lancedb",
+    "fastapi",
+    "typer",
+    "sanctions",
+    "python"
+  ],
+  "created_at": "2026-03-09T03:39:39.730777+00:00",
+  "updated_at": "2026-03-09T03:39:39.730777+00:00",
+  "parent_project": null,
+  "sessions": [
+    {
+      "session_id": "959cff60-03f4-4c26-9a39-4067360ce9b1/subagents/build_project_1_dprk_entity_resolution_engine_20260309_032514",
+      "timestamp": "2026-03-09T03:39:39.730777+00:00",
+      "summary": "Built the complete DPRK Entity Resolution Engine from spec. All 10 layers implemented (types, ingest, parse, extract, embed, resolve, review, storage, api, cli). 48 Python source files. 94 tests passing, 0 failing. Layer-order architectural rules enforced via AST-based structural tests. All imports verified."
+    }
+  ]
+}

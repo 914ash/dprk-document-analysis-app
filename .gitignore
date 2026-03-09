@@ -1,0 +1,31 @@
+# Python
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+**/.ruff_cache/
+**/.mypy_cache/
+
+# Environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Data and generated outputs
+packages/entity-resolution/data/raw/*.pdf
+packages/entity-resolution/data/interim/*.parquet
+packages/entity-resolution/data/processed/*.json
+packages/entity-resolution/data/review/*.parquet
+packages/network-drift/data/interim/
+packages/network-drift/data/processed/*.json
+packages/network-drift/data/processed/viz/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Nested repo leftovers
+.pytest_cache/

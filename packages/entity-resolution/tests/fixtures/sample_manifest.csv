@@ -1,0 +1,4 @@
+doc_id,title,report_type,report_date,source_url,mirror_url,local_path,checksum,status
+TEST-001,Test DPRK Report Alpha,final,2023-01-15,https://example.com/test_alpha.pdf,,,,pending
+TEST-002,Test DPRK Report Beta,midterm,2022-06-01,https://example.com/test_beta.pdf,,,,pending
+TEST-003,Test DPRK Report Gamma,final,2021-03-20,https://example.com/test_gamma.pdf,,,,pending

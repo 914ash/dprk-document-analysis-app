@@ -1,0 +1,1522 @@
+{
+    "mentions":  [
+                     {
+                         "mention_id":  "22853204-a01d-46b9-b4d3-ac3dd8001736",
+                         "doc_id":  "S-2018-171",
+                         "page":  60,
+                         "surface_form":  "China",
+                         "normalized_form":  "China",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "ank and Ryugyong Commercial Bank, who operated in",
+                         "context_right":  ", Libya, the Russian Federation, the Syrian Arab R",
+                         "frequency":  2396,
+                         "doc_count":  20
+                     },
+                     {
+                         "mention_id":  "c671c1bd-5ef6-4632-adb6-9d64e9a4288c",
+                         "doc_id":  "S-2018-171",
+                         "page":  55,
+                         "surface_form":  "Korea",
+                         "normalized_form":  "Korea",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "diplomats of the Democratic People’s Republic of",
+                         "context_right":  "“Mr. Yu Kyong Jin and Mr. Jong Kuk Chol, who were",
+                         "frequency":  944,
+                         "doc_count":  20
+                     },
+                     {
+                         "mention_id":  "65797ed9-ff5e-4e89-b0cd-87cc0c26df41",
+                         "doc_id":  "S-2018-171",
+                         "page":  56,
+                         "surface_form":  "Pyongyang",
+                         "normalized_form":  "Pyongyang",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "ae)  146. The Panel investigated the operation in",
+                         "context_right":  "of the Bugsae Shop, linked to the Singapore-based",
+                         "frequency":  641,
+                         "doc_count":  20
+                     },
+                     {
+                         "mention_id":  "0e8f2f74-b6c4-472d-adab-73f27fe5a002",
+                         "doc_id":  "S-2018-171",
+                         "page":  59,
+                         "surface_form":  "Hong Kong",
+                         "normalized_form":  "Hong Kong",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "front companies, especially those established in",
+                         "context_right":  ", to ensure that transactions were conducted in a",
+                         "frequency":  331,
+                         "doc_count":  20
+                     },
+                     {
+                         "mention_id":  "5dd61402-d4e6-4c96-9207-5a0deb07f405",
+                         "doc_id":  "S-2018-171",
+                         "page":  182,
+                         "surface_form":  "the Security Council",
+                         "normalized_form":  "The Security Council",
+                         "entity_type":  "ORG",
+                         "context_left":  "NG CHOL in the list are designated individuals by",
+                         "context_right":  ".  After the relevant individuals were designated",
+                         "frequency":  326,
+                         "doc_count":  20
+                     },
+                     {
+                         "mention_id":  "6961e1d1-7fd7-4a36-bd13-467ab816a66f",
+                         "doc_id":  "S-2019-171",
+                         "page":  2,
+                         "surface_form":  "the Panel of Experts",
+                         "normalized_form":  "The Panel Of Experts",
+                         "entity_type":  "ORG",
+                         "context_left":  "/379  Annex    Letter dated 21 February 2019 from",
+                         "context_right":  "established pursuant to resolution 1874 (2009) ad",
+                         "frequency":  266,
+                         "doc_count":  20
+                     },
+                     {
+                         "mention_id":  "a5540480-bbda-4476-a305-4f0e41af2355",
+                         "doc_id":  "S-2018-171",
+                         "page":  56,
+                         "surface_form":  "Singapore",
+                         "normalized_form":  "Singapore",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "on in Pyongyang of the Bugsae Shop, linked to the",
+                         "context_right":  "-based OCN (Singapore) Pte Ltd (figure XXIV) (see",
+                         "frequency":  230,
+                         "doc_count":  20
+                     },
+                     {
+                         "mention_id":  "4be85d74-9f50-4afd-be21-e4f36507c248",
+                         "doc_id":  "S-2018-171",
+                         "page":  70,
+                         "surface_form":  "the Republic of Korea",
+                         "normalized_form":  "the Republic of Korea",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "the country represent themselves as nationals of",
+                         "context_right":  "in corporate registry paperwork (seen also in the",
+                         "frequency":  190,
+                         "doc_count":  20
+                     },
+                     {
+                         "mention_id":  "3c1fc4ce-ec14-480a-8fc7-d84517774798",
+                         "doc_id":  "S-2018-171",
+                         "page":  98,
+                         "surface_form":  "Thailand",
+                         "normalized_form":  "Thailand",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "m 4-11 March.  Draft change 6 to 9.7 on 19 March.",
+                         "context_right":  "cancelled the import planned for Koh Si Chang 20-",
+                         "frequency":  146,
+                         "doc_count":  20
+                     },
+                     {
+                         "mention_id":  "7845d383-7f89-4351-a710-37357e59edb1",
+                         "doc_id":  "S-2019-171",
+                         "page":  1,
+                         "surface_form":  "English",
+                         "normalized_form":  "English",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "ty Council Distr.: General 5 March 2019 Original:",
+                         "context_right":  "19-01704* (E)    250919 *1901704*     Note by th",
+                         "frequency":  46,
+                         "doc_count":  20
+                     },
+                     {
+                         "mention_id":  "40e3da1c-cbe7-4749-bbdb-202f2b86fce7",
+                         "doc_id":  "S-2018-171",
+                         "page":  54,
+                         "surface_form":  "the Democratic People’s\nRepublic of Korea",
+                         "normalized_form":  "The Democratic People’S Republic Of Korea",
+                         "entity_type":  "ORG",
+                         "context_left":  "hat the salaries of the military training team of",
+                         "context_right":  "were to be paid in United States dollars to the E",
+                         "frequency":  2938,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "cfdae86d-e14a-4b5e-9a3e-74f37c1090ab",
+                         "doc_id":  "S-2018-171",
+                         "page":  55,
+                         "surface_form":  "the Democratic People’s Republic",
+                         "normalized_form":  "The Democratic People’S Republic",
+                         "entity_type":  "ORG",
+                         "context_left":  "ber 2017, Uganda did report that two diplomats of",
+                         "context_right":  "of Korea “Mr. Yu Kyong Jin and Mr. Jong Kuk Chol,",
+                         "frequency":  474,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "4365046e-50ce-45dd-a3a2-dd587aa002de",
+                         "doc_id":  "S-2018-171",
+                         "page":  100,
+                         "surface_form":  "Russian",
+                         "normalized_form":  "Russian",
+                         "entity_type":  "ORG",
+                         "context_left":  "ated …. ?from 8 to 24 August 2017 coal originated",
+                         "context_right":  "Federation?. 4 Kholmsk, Russia 9-11 August 2017 (",
+                         "frequency":  400,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "560f8a22-6f01-40d7-a7ab-4b68027ba9e9",
+                         "doc_id":  "S-2018-171",
+                         "page":  56,
+                         "surface_form":  "Japan",
+                         "normalized_form":  "Japan",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "d luxury goods produced in the European Union and",
+                         "context_right":  "and distributed by another Singapore-based compan",
+                         "frequency":  325,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "f9c7ee7f-29ae-4212-a966-427a765c799a",
+                         "doc_id":  "S-2019-171",
+                         "page":  7,
+                         "surface_form":  "the Russian Federation",
+                         "normalized_form":  "the Russian Federation",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "July 2018, the Panel received a note verbale from",
+                         "context_right":  "in which it sought clarification on the projectio",
+                         "frequency":  264,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "3d2b973f-6daf-41e7-8466-07e12be88f3a",
+                         "doc_id":  "S-2018-171",
+                         "page":  54,
+                         "surface_form":  "United States",
+                         "normalized_form":  "United States",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "tic People’s Republic of Korea were to be paid in",
+                         "context_right":  "dollars to the Embassy of the Democratic People’s",
+                         "frequency":  167,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "9cf89a75-133e-4f5d-b3c8-ae03523b6ac3",
+                         "doc_id":  "S-2018-171",
+                         "page":  55,
+                         "surface_form":  "the United Nations",
+                         "normalized_form":  "The United Nations",
+                         "entity_type":  "ORG",
+                         "context_left":  "re allegedly employees of an entity sanctioned by",
+                         "context_right":  ", the Korea Mining and Development Trading Corpora",
+                         "frequency":  96,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "6168fc92-5fdb-41bd-8ee4-8b08ab3c91f0",
+                         "doc_id":  "S-2018-171",
+                         "page":  71,
+                         "surface_form":  "Myanmar",
+                         "normalized_form":  "Myanmar",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "Defense Commission in 2010 and worked for MKP in",
+                         "context_right":  "until 2013.",
+                         "frequency":  91,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "f0751992-296f-4d14-ac3f-7fec862bba0f",
+                         "doc_id":  "S-2019-171",
+                         "page":  2,
+                         "surface_form":  "the\nCommittee",
+                         "normalized_form":  "The Committee",
+                         "entity_type":  "ORG",
+                         "context_left":  "8 (2006) on 1 February 2019 and was considered by",
+                         "context_right":  "on 21 February 2019.  The Panel would appreciate",
+                         "frequency":  91,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "928b3758-d9e7-40cf-88f8-a06cf4b07c24",
+                         "doc_id":  "S-2019-171",
+                         "page":  2,
+                         "surface_form":  "the Security Council Committee",
+                         "normalized_form":  "The Security Council Committee",
+                         "entity_type":  "ORG",
+                         "context_left":  "n its work.*  The attached report was provided to",
+                         "context_right":  "established pursuant to resolution 1718 (2006) on",
+                         "frequency":  79,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "1d08600b-6ac0-460b-9e03-2fa2231e1542",
+                         "doc_id":  "S-2018-171",
+                         "page":  63,
+                         "surface_form":  "Europe",
+                         "normalized_form":  "Europe",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "ited Development Bank, in financial activities in",
+                         "context_right":  ". See S/2017/742, paras. 52–53; and S/2017/150, pa",
+                         "frequency":  57,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "f18194c7-4a80-4c96-8e54-e119abbb41bb",
+                         "doc_id":  "S-2019-171",
+                         "page":  7,
+                         "surface_form":  "I. Introduction",
+                         "normalized_form":  "I. Introduction",
+                         "entity_type":  "ORG",
+                         "context_left":  "S/2019/171  7/379 19-01704",
+                         "context_right":  "1. In paragraph 2 of resolution 2407 (2018), th",
+                         "frequency":  22,
+                         "doc_count":  19
+                     },
+                     {
+                         "mention_id":  "d77f565e-8edb-45b1-8f75-eac29b328dd5",
+                         "doc_id":  "S-2019-171",
+                         "page":  28,
+                         "surface_form":  "North\nKorea",
+                         "normalized_form":  "North Korea",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "Chinese fishing boats operating in the “water of",
+                         "context_right":  "”. Another interviewee stated that the monthly cos",
+                         "frequency":  280,
+                         "doc_count":  18
+                     },
+                     {
+                         "mention_id":  "16d193a7-d679-4d99-9ac7-b69ff599436a",
+                         "doc_id":  "S-2018-171",
+                         "page":  63,
+                         "surface_form":  "Malaysia",
+                         "normalized_form":  "Malaysia",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "three Reconnaissance General Bureau operatives in",
+                         "context_right":  "(February 2014) on suspicion of smuggling $450,00",
+                         "frequency":  187,
+                         "doc_count":  18
+                     },
+                     {
+                         "mention_id":  "9241ccc4-64fa-43f1-bc13-984a505f0adf",
+                         "doc_id":  "S-2018-171",
+                         "page":  98,
+                         "surface_form":  "Nampo",
+                         "normalized_form":  "Nampo",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "15-25 March New Global 8660521 Kiribati Jamaica",
+                         "context_right":  ", DPRK 13 February AIS off from 30 January to 17 M",
+                         "frequency":  168,
+                         "doc_count":  18
+                     },
+                     {
+                         "mention_id":  "623cc7b6-5236-40b5-879b-1abdbf5c3979",
+                         "doc_id":  "S-2018-171",
+                         "page":  98,
+                         "surface_form":  "Panama",
+                         "normalized_form":  "Panama",
+                         "entity_type":  "LOCATION",
+                         "context_left":  ", Thanh Hoa, Vietnam, 15 March  Kai Xiang 9634359",
+                         "context_right":  "(Sierra Leone) 20,048 MT   Nampo, DPRK *claimed:",
+                         "frequency":  139,
+                         "doc_count":  18
+                     },
+                     {
+                         "mention_id":  "8ad95be3-ead8-4bfc-a18c-4cb23870787b",
+                         "doc_id":  "S-2018-171",
+                         "page":  57,
+                         "surface_form":  "resolution 1718",
+                         "normalized_form":  "Resolution 1718",
+                         "entity_type":  "ORG",
+                         "context_left":  "uld be considered luxury goods in accordance with",
+                         "context_right":  "(2006) given that they are covered by Japan’s lux",
+                         "frequency":  136,
+                         "doc_count":  18
+                     },
+                     {
+                         "mention_id":  "c3bb5e53-daee-4b37-bfe9-ceffb07575bf",
+                         "doc_id":  "S-2019-171",
+                         "page":  7,
+                         "surface_form":  "the United States",
+                         "normalized_form":  "the United States",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "d an additional three vessels. 3. On 6 July 2018,",
+                         "context_right":  "informed the Panel that the Democratic People’s R",
+                         "frequency":  119,
+                         "doc_count":  18
+                     },
+                     {
+                         "mention_id":  "156fd9ec-e176-41a3-b8cf-c0dc31de61d9",
+                         "doc_id":  "S-2018-171",
+                         "page":  67,
+                         "surface_form":  "Dalian",
+                         "normalized_form":  "Dalian",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "h “goods would be shipped by us [T Specialist] to",
+                         "context_right":  "as the destination port for distribution in China",
+                         "frequency":  113,
+                         "doc_count":  18
+                     },
+                     {
+                         "mention_id":  "56d5a278-b196-4e5c-95e4-7e6f4a7db290",
+                         "doc_id":  "S-2018-171",
+                         "page":  60,
+                         "surface_form":  "Russian Federation",
+                         "normalized_form":  "Russian Federation",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "ommercial Bank, who operated in China, Libya, the",
+                         "context_right":  ", the Syrian Arab Republic and the United Arab Emi",
+                         "frequency":  91,
+                         "doc_count":  18
+                     },
+                     {
+                         "mention_id":  "b52bba7c-b63a-43c0-81e5-9d84b9a91b2b",
+                         "doc_id":  "S-2018-171",
+                         "page":  71,
+                         "surface_form":  "Africa",
+                         "normalized_form":  "Africa",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "e to document many of the company’s activities in",
+                         "context_right":  "and Hong Kong, but not those publicly claimed by",
+                         "frequency":  52,
+                         "doc_count":  18
+                     },
+                     {
+                         "mention_id":  "70a35955-aab9-44d8-8de4-7468ecdfa539",
+                         "doc_id":  "S-2018-171",
+                         "page":  77,
+                         "surface_form":  "North Korean",
+                         "normalized_form":  "North Korean",
+                         "entity_type":  "ORG",
+                         "context_left":  "see annex 103).  167 Drazen Jorgic, “In Pakistan,",
+                         "context_right":  "diplomat’s alcohol stash raises bootlegging suspi",
+                         "frequency":  231,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "d5d914cf-2359-4949-89a0-55d4ebc3442b",
+                         "doc_id":  "S-2019-171",
+                         "page":  66,
+                         "surface_form":  "Kim Jong Un",
+                         "normalized_form":  "Kim Jong Un",
+                         "entity_type":  "PERSON",
+                         "context_left":  "s for ballistic missile assembly (left); Chairman",
+                         "context_right":  "visiting the truck factory three weeks prior to l",
+                         "frequency":  169,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "c8dcbbbe-aa68-448a-b435-b41b39d36e6d",
+                         "doc_id":  "S-2018-171",
+                         "page":  55,
+                         "surface_form":  "KOMID",
+                         "normalized_form":  "Komid",
+                         "entity_type":  "ORG",
+                         "context_left":  "/292 18-01593  into the activities of four senior",
+                         "context_right":  "officials also active in Libya, the Sudan and the",
+                         "frequency":  163,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "8f75073d-46fa-4d5e-9e2c-68b35a1dc2ce",
+                         "doc_id":  "S-2018-171",
+                         "page":  63,
+                         "surface_form":  "Kim",
+                         "normalized_form":  "Kim",
+                         "entity_type":  "PERSON",
+                         "context_left":  "ancial institutions in the country established by",
+                         "context_right":  "Su- Gwang, an official of the Reconnaissance Gene",
+                         "frequency":  154,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "b9f5a12e-ec1d-4aea-a24c-bf6934279e0f",
+                         "doc_id":  "S-2018-171",
+                         "page":  98,
+                         "surface_form":  "Sierra Leone",
+                         "normalized_form":  "Sierra Leone",
+                         "entity_type":  "ORG",
+                         "context_left":  "Hoa, Vietnam, 15 March  Kai Xiang 9634359 Panama (",
+                         "context_right":  ") 20,048 MT   Nampo, DPRK *claimed: Qingdao, China",
+                         "frequency":  126,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "f4d84a17-5027-487b-82c3-cd2504da215b",
+                         "doc_id":  "S-2018-171",
+                         "page":  234,
+                         "surface_form":  "Cambodia",
+                         "normalized_form":  "Cambodia",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "operated in Algeria, Angola, Australia, Burundi,",
+                         "context_right":  ", China, Congo, DRC, Ethiopia, Hong Kong, China, K",
+                         "frequency":  89,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "a69de459-ca58-4ac6-ac31-c0fb05420890",
+                         "doc_id":  "S-2018-171",
+                         "page":  101,
+                         "surface_form":  "September",
+                         "normalized_form":  "September",
+                         "entity_type":  "ORG",
+                         "context_left":  "gust. (Annex 7) 12 Kholmsk, Russia 29 August -  1",
+                         "context_right":  "(For transshipment) Rung Ra 2 (9020534) DPRK  Won",
+                         "frequency":  86,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "da80fcf6-9c1c-44c7-847e-2310540fe1df",
+                         "doc_id":  "S-2018-171",
+                         "page":  54,
+                         "surface_form":  "para",
+                         "normalized_form":  "para",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "letter of 24 July 2015 to Uganda. See S/2016/157,",
+                         "context_right":  ". 114 and figure XXV.  115 The Panel notes that th",
+                         "frequency":  70,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "740ce0b4-c751-47a7-ab84-bc23c0ec9c0b",
+                         "doc_id":  "S-2018-171",
+                         "page":  58,
+                         "surface_form":  "Germany",
+                         "normalized_form":  "Germany",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "Following the adoption of the Council Regulation,",
+                         "context_right":  "exported wines, including sparkling wines, and sp",
+                         "frequency":  67,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "eb30edf4-414f-4957-adaa-13de93605ec0",
+                         "doc_id":  "S-2018-171",
+                         "page":  58,
+                         "surface_form":  "Italy",
+                         "normalized_form":  "Italy",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "17) to the Democratic People’s Republic of Korea.",
+                         "context_right":  "exported $46,992 worth of wine and vermouth betwe",
+                         "frequency":  66,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "4a8fd775-5b08-4af7-8cd5-958bfe90ee6d",
+                         "doc_id":  "S-2018-171",
+                         "page":  183,
+                         "surface_form":  "Dandong",
+                         "normalized_form":  "Dandong",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "???? Changgwang Hotel, 5th Floor; Beijing, China;",
+                         "context_right":  ", China Two ATMs at Pyongyang Airport and one in t",
+                         "frequency":  65,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "51c2b42a-94af-428e-9a1b-658723a7a810",
+                         "doc_id":  "S-2019-171",
+                         "page":  12,
+                         "surface_form":  "annual",
+                         "normalized_form":  "Annual",
+                         "entity_type":  "ORG",
+                         "context_left":  "a poor record of reporting ship registrations or",
+                         "context_right":  "tonnage to the International Maritime Organizatio",
+                         "frequency":  61,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "569b01e7-91e9-4090-9317-e3f3465692e4",
+                         "doc_id":  "S-2019-171",
+                         "page":  4,
+                         "surface_form":  "Asia",
+                         "normalized_form":  "Asia",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "tions into designated entities and individuals in",
+                         "context_right":  "who clandestinely procured centrifuges for the nu",
+                         "frequency":  54,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "7172789a-d281-427f-af85-7656a56a285b",
+                         "doc_id":  "S-2018-171",
+                         "page":  71,
+                         "surface_form":  "seven",
+                         "normalized_form":  "Seven",
+                         "entity_type":  "ORG",
+                         "context_left":  "annexes 66–67). Han Hun Il remains a director of",
+                         "context_right":  "of these companies, although MKP indicated to the",
+                         "frequency":  50,
+                         "doc_count":  17
+                     },
+                     {
+                         "mention_id":  "1b3a6e59-a9c9-4276-a1de-a718981f8674",
+                         "doc_id":  "S-2018-171",
+                         "page":  99,
+                         "surface_form":  "Russia",
+                         "normalized_form":  "Russia",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "S/2018/171  99/292 18-01593  (China) 10 Nakhodka,",
+                         "context_right":  "25 April Zhi Kun 7 (Orient Lidu) 9614610 Mongolia",
+                         "frequency":  248,
+                         "doc_count":  16
+                     },
+                     {
+                         "mention_id":  "44da6aa1-4c35-40b4-aa0a-6690bffb83ba",
+                         "doc_id":  "S-2018-171",
+                         "page":  61,
+                         "surface_form":  "Beijing",
+                         "normalized_form":  "Beijing",
+                         "entity_type":  "LOCATION",
+                         "context_left":  "s the representative of the Foreign Trade Bank in",
+                         "context_right":  ". 133 He was also listed, along with Nam Sok Chan,",
+                         "frequency":  161,
+                         "doc_count":  16
+                     },
+                     {
+                         "mention_id":  "f2d88884-f665-4de9-a051-cdadf97a48fb",
+                         "doc_id":  "S-2018-171",
+                         "page":  71,
+                         "surface_form":  "October",
+                         "normalized_form":  "October",
+                         "entity_type":  "ORG",
+                         "context_left":  "including the Lao People’s Democratic Republic in",
+                         "context_right":  ". At the time of writing, the Lao People’s Democra",
+                         "frequency":  102,
+                         "doc_count":  16
+                     },
+                     {
+                         "mention_id":  "d51a6405-da06-4382-9fb2-80dc7cd4d38a",
+                         "doc_id":  "S-2018-171",
+                         "page":  100,
+                         "surface_form":  "July",
+                         "normalized_form":  "July",
+                         "entity_type":  "ORG",
+                         "context_left":  "359) Panama (Sierra Leone) 20,090 MT  Nampo on 26",
+                         "context_right":  "*claimed port: Vladivostok, Russia 28 July AIS of",
+                         "frequency":  64,
+                         "doc_count":  16
+                     },
+                     {
+                         "mention_id":  "b3b5317b-72d1-4650-8415-ae8809d2189f",
+                         "doc_id":  "S-2018-171",
+                         "page":  55,
+                         "surface_form":  "the Reconnaissance General Bureau",
+                         "normalized_form":  "The Reconnaissance General Bureau",
+                         "entity_type":  "ORG",
+                         "context_left":  "half of the Green Pine Associated Corporation and",
+                         "context_right":  "in Zimbabwe. Zimbabwe provided information on two",
+                         "frequency":  55,
+                         "doc_count":  16
+                     }
+                 ],
+    "candidate_pairs":  [
+                            {
+                                "candidate_id":  "7d6fa945-7e8b-41a2-b586-520d0229b849",
+                                "mention_a":  "Ri Eun Song",
+                                "mention_b":  "Ri Un Song",
+                                "entity_type":  "PERSON",
+                                "score":  0.8716,
+                                "reasons":  [
+                                                "cosine_sim=0.8944",
+                                                "levenshtein_sim=0.8182"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "58c13402-ccf4-4ffd-9a36-8b5c638985ae",
+                                "mention_id_b":  "88c8366a-408b-413a-a80d-06b1091ad680",
+                                "surface_a":  "Ri Eun Song",
+                                "surface_b":  "Ri Un Song",
+                                "analyst_note":  "High-priority alias candidate. Confirm the contexts describe the same actor before approving."
+                            },
+                            {
+                                "candidate_id":  "4dcd3a93-097e-4e2f-97e0-0493eeba017f",
+                                "mention_a":  "Mali",
+                                "mention_b":  "Malawi",
+                                "entity_type":  "PERSON",
+                                "score":  0.842,
+                                "reasons":  [
+                                                "cosine_sim=0.9172",
+                                                "levenshtein_sim=0.6667"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "35d8ba75-0aed-4486-87b3-05f7337a674e",
+                                "mention_id_b":  "ef6a7f3a-9d32-4394-9708-7f8eb2b48e56",
+                                "surface_a":  "Mali",
+                                "surface_b":  "Malawi",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "66610c05-a8c4-473d-8b12-bf8e7d3d666e",
+                                "mention_a":  "December",
+                                "mention_b":  "November",
+                                "entity_type":  "ORG",
+                                "score":  0.8098,
+                                "reasons":  [
+                                                "cosine_sim=0.8890",
+                                                "levenshtein_sim=0.6250"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "9fe2b4e2-86c1-45b9-bf36-8f9787e0c035",
+                                "mention_id_b":  "9c6baf81-cbb6-492b-8692-72e4a3c0315a",
+                                "surface_a":  "December",
+                                "surface_b":  "November",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "b393a727-424d-4a9e-9444-cca06e943266",
+                                "mention_a":  "Ri Jong Won",
+                                "mention_b":  "Jung Won",
+                                "entity_type":  "PERSON",
+                                "score":  0.7775,
+                                "reasons":  [
+                                                "cosine_sim=0.8380",
+                                                "levenshtein_sim=0.6364"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "d708399b-a5f1-44c3-8097-ff8dba5c5d7f",
+                                "mention_id_b":  "c4e3009d-65a4-4d94-be16-44e7b7eefa07",
+                                "surface_a":  "Ri Jong Won",
+                                "surface_b":  "Jung Won",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "dcd58856-c83b-4d31-b346-b4a9e32de2d8",
+                                "mention_a":  "Belgium",
+                                "mention_b":  "Belarus",
+                                "entity_type":  "LOCATION",
+                                "score":  0.7683,
+                                "reasons":  [
+                                                "cosine_sim=0.8527",
+                                                "levenshtein_sim=0.5714"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "f288ce38-d150-4664-ab91-59004998c167",
+                                "mention_id_b":  "f75a8fc7-52b8-4a21-b04e-96c23c6310af",
+                                "surface_a":  "Belgium",
+                                "surface_b":  "Belarus",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "7d458ff6-8864-4a5b-88ae-1163b4b2759d",
+                                "mention_a":  "Kum Un San",
+                                "mention_b":  "Kum Un",
+                                "entity_type":  "PERSON",
+                                "score":  0.7638,
+                                "reasons":  [
+                                                "cosine_sim=0.8340",
+                                                "levenshtein_sim=0.6000",
+                                                "high_token_overlap=0.67"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "1518142b-a2a5-4647-ae26-670d19d24a7e",
+                                "mention_id_b":  "867bb32d-3fee-4010-b211-9c93c16cfcee",
+                                "surface_a":  "Kum Un San",
+                                "surface_b":  "Kum Un",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "de76e898-5c70-4fd9-b4a5-f67f39dfec9e",
+                                "mention_a":  "Guyana",
+                                "mention_b":  "Grenada",
+                                "entity_type":  "LOCATION",
+                                "score":  0.7575,
+                                "reasons":  [
+                                                "cosine_sim=0.8985",
+                                                "levenshtein_sim=0.4286"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "a4c4ae24-84cd-48e4-8ca3-9f2c8d6f48e7",
+                                "mention_id_b":  "42b34da5-7b29-4fb3-9944-de2dfc76a369",
+                                "surface_a":  "Guyana",
+                                "surface_b":  "Grenada",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "6c2e297d-c0cd-4cb5-ba54-ebaa27ce14a4",
+                                "mention_a":  "Il Hwan",
+                                "mention_b":  "Il-Hwan",
+                                "entity_type":  "PERSON",
+                                "score":  0.7519,
+                                "reasons":  [
+                                                "cosine_sim=0.7068",
+                                                "levenshtein_sim=0.8571"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "0652d13a-0cf1-4cb5-b7ac-9bae5e14d481",
+                                "mention_id_b":  "1ba3a15d-6cad-4d5a-a579-d2770d0cfa93",
+                                "surface_a":  "Il Hwan",
+                                "surface_b":  "Il-Hwan",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "229558a2-7999-4cdd-a9c4-467d81710185",
+                                "mention_a":  "Kim Su Gwang",
+                                "mention_b":  "Kim Sou-Gwang",
+                                "entity_type":  "PERSON",
+                                "score":  0.7475,
+                                "reasons":  [
+                                                "cosine_sim=0.7053",
+                                                "levenshtein_sim=0.8462"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "9faeb9c2-a28c-4345-ac07-bab738ea7842",
+                                "mention_id_b":  "0767619e-4441-4935-9279-e5153c007536",
+                                "surface_a":  "Kim Su Gwang",
+                                "surface_b":  "Kim Sou-Gwang",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "28511b70-44f5-491a-a123-893d78bea663",
+                                "mention_a":  "Mali",
+                                "mention_b":  "Mauritius",
+                                "entity_type":  "PERSON",
+                                "score":  0.7465,
+                                "reasons":  [
+                                                "cosine_sim=0.9235",
+                                                "levenshtein_sim=0.3333"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "35d8ba75-0aed-4486-87b3-05f7337a674e",
+                                "mention_id_b":  "5660a7ae-866c-40ec-a7db-03580123806f",
+                                "surface_a":  "Mali",
+                                "surface_b":  "Mauritius",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "784c82b0-4557-45c2-a9a8-fc68931d0c5b",
+                                "mention_a":  "Kim Hyok Chol",
+                                "mention_b":  "Kim Kyong Hyok",
+                                "entity_type":  "PERSON",
+                                "score":  0.7454,
+                                "reasons":  [
+                                                "cosine_sim=0.8199",
+                                                "levenshtein_sim=0.5714"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "f1255c5b-22e4-4b05-be3b-5a950185014e",
+                                "mention_id_b":  "484dd417-c1cb-40e5-ac0f-ee14ebb8df3c",
+                                "surface_a":  "Kim Hyok Chol",
+                                "surface_b":  "Kim Kyong Hyok",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "069544c6-2043-4c7f-9240-9eab0c9760c6",
+                                "mention_a":  "Kim Su-Kwang",
+                                "mention_b":  "Kim Sou-Gwang",
+                                "entity_type":  "PERSON",
+                                "score":  0.7439,
+                                "reasons":  [
+                                                "cosine_sim=0.7001",
+                                                "levenshtein_sim=0.8462"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "f68ea4ed-c38b-46ef-ba15-f3584b8e45d7",
+                                "mention_id_b":  "0767619e-4441-4935-9279-e5153c007536",
+                                "surface_a":  "Kim Su-Kwang",
+                                "surface_b":  "Kim Sou-Gwang",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "e665fd1b-3c20-4785-b7bb-c33e27e39e4f",
+                                "mention_a":  "Daesong Bank",
+                                "mention_b":  "Ilsim International Bank",
+                                "entity_type":  "ORG",
+                                "score":  0.7414,
+                                "reasons":  [
+                                                "cosine_sim=0.9163",
+                                                "levenshtein_sim=0.3333"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "ea66bbb0-d17a-425c-b97e-1bace646db0a",
+                                "mention_id_b":  "b9d3879d-d5bd-4ba3-8b6d-f06440a69e79",
+                                "surface_a":  "Daesong Bank",
+                                "surface_b":  "Ilsim International Bank",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "0c256dfe-74cf-4fba-a9d9-c1c04d2763a2",
+                                "mention_a":  "Nampo",
+                                "mention_b":  "Jamaica",
+                                "entity_type":  "LOCATION",
+                                "score":  0.7398,
+                                "reasons":  [
+                                                "cosine_sim=0.9345",
+                                                "levenshtein_sim=0.2857"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "9241ccc4-64fa-43f1-bc13-984a505f0adf",
+                                "mention_id_b":  "68906dc6-c82e-4bfd-88dd-94d789877c52",
+                                "surface_a":  "Nampo",
+                                "surface_b":  "Jamaica",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "0bd5ea13-9333-4ff7-95c9-d9b2647c339c",
+                                "mention_a":  "Poland",
+                                "mention_b":  "Romania",
+                                "entity_type":  "LOCATION",
+                                "score":  0.7372,
+                                "reasons":  [
+                                                "cosine_sim=0.8694",
+                                                "levenshtein_sim=0.4286"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "37a4a61f-2952-492e-aa5b-4b0d9f3b14ee",
+                                "mention_id_b":  "acfc774d-18be-4ad6-bee1-01ad95c61349",
+                                "surface_a":  "Poland",
+                                "surface_b":  "Romania",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "98db4c1c-4d23-4693-839f-a88b34d8cb19",
+                                "mention_a":  "Sohae",
+                                "mention_b":  "Tongchang-ri",
+                                "entity_type":  "LOCATION",
+                                "score":  0.7366,
+                                "reasons":  [
+                                                "cosine_sim=0.9451",
+                                                "levenshtein_sim=0.2500"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "f16ed402-33ec-47c7-81b6-d3d727807a1b",
+                                "mention_id_b":  "796e5448-cb91-42dc-a119-6d4c104525b7",
+                                "surface_a":  "Sohae",
+                                "surface_b":  "Tongchang-ri",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "81b0b7d6-f690-4ac8-8aef-88ea0f715832",
+                                "mention_a":  "Kim Sang Ho",
+                                "mention_b":  "Kim Sangho",
+                                "entity_type":  "PERSON",
+                                "score":  0.7361,
+                                "reasons":  [
+                                                "cosine_sim=0.7010",
+                                                "levenshtein_sim=0.8182"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "155df5ef-2ad5-41e0-a13e-1acfac844e74",
+                                "mention_id_b":  "71afa255-7262-41d2-875c-91c71f7c4069",
+                                "surface_a":  "Kim Sang Ho",
+                                "surface_b":  "Kim Sangho",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "c6084fb7-8fb7-478d-af98-95c4b0291c7a",
+                                "mention_a":  "Kn-23",
+                                "mention_b":  "Kn-25",
+                                "entity_type":  "ORG",
+                                "score":  0.7313,
+                                "reasons":  [
+                                                "cosine_sim=0.7019",
+                                                "levenshtein_sim=0.8000"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "d748c688-4c56-4ff1-b6d6-5dda189aaba8",
+                                "mention_id_b":  "88095633-c1a0-4a2f-899e-4e21722693fc",
+                                "surface_a":  "Kn-23",
+                                "surface_b":  "Kn-25",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "8b3c71b3-6a9e-4e68-a962-163628ac9381",
+                                "mention_a":  "Kn-23",
+                                "mention_b":  "Kn-24",
+                                "entity_type":  "ORG",
+                                "score":  0.7296,
+                                "reasons":  [
+                                                "cosine_sim=0.6994",
+                                                "levenshtein_sim=0.8000"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "d748c688-4c56-4ff1-b6d6-5dda189aaba8",
+                                "mention_id_b":  "d486d430-135c-4f96-a154-b4d0bab4f648",
+                                "surface_a":  "Kn-23",
+                                "surface_b":  "Kn-24",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "74687e64-7d6f-4a17-9d65-5c8a2d2a6608",
+                                "mention_a":  "Kim Mun Chol",
+                                "mention_b":  "Kim Hyok Chol",
+                                "entity_type":  "PERSON",
+                                "score":  0.7287,
+                                "reasons":  [
+                                                "cosine_sim=0.7443",
+                                                "levenshtein_sim=0.6923"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "28c0eb5e-aa09-49e4-87ab-13233900587c",
+                                "mention_id_b":  "f1255c5b-22e4-4b05-be3b-5a950185014e",
+                                "surface_a":  "Kim Mun Chol",
+                                "surface_b":  "Kim Hyok Chol",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "c6c9ab51-3060-4981-9db2-e4bcc52b926c",
+                                "mention_a":  "Pae",
+                                "mention_b":  "Pae Won Uk",
+                                "entity_type":  "PERSON",
+                                "score":  0.7217,
+                                "reasons":  [
+                                                "cosine_sim=0.9024",
+                                                "levenshtein_sim=0.3000"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "128a3e17-c62e-469c-b860-966254ab42a9",
+                                "mention_id_b":  "fcececc0-b6b1-482d-8014-2e60a28f9403",
+                                "surface_a":  "Pae",
+                                "surface_b":  "Pae Won Uk",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "5b4c4c55-4005-4777-ad45-606ba3ab0ea1",
+                                "mention_a":  "Malawi",
+                                "mention_b":  "Mauritius",
+                                "entity_type":  "PERSON",
+                                "score":  0.7209,
+                                "reasons":  [
+                                                "cosine_sim=0.8871",
+                                                "levenshtein_sim=0.3333"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "ef6a7f3a-9d32-4394-9708-7f8eb2b48e56",
+                                "mention_id_b":  "5660a7ae-866c-40ec-a7db-03580123806f",
+                                "surface_a":  "Malawi",
+                                "surface_b":  "Mauritius",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "c12066ef-a81b-46dc-84e7-7234786dc56b",
+                                "mention_a":  "Australia",
+                                "mention_b":  "Algeria",
+                                "entity_type":  "LOCATION",
+                                "score":  0.7193,
+                                "reasons":  [
+                                                "cosine_sim=0.8371",
+                                                "levenshtein_sim=0.4444"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "e742434c-8f58-471d-b652-cec1f87ada0b",
+                                "mention_id_b":  "03bc2ca3-1d96-4ba4-a862-fbe2ed6c9a32",
+                                "surface_a":  "Australia",
+                                "surface_b":  "Algeria",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "1e912b80-6215-48b5-a8ea-5e04148d11cb",
+                                "mention_a":  "Transporter",
+                                "mention_b":  "Launcher",
+                                "entity_type":  "PERSON",
+                                "score":  0.7187,
+                                "reasons":  [
+                                                "cosine_sim=0.9098",
+                                                "levenshtein_sim=0.2727"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "ce419c62-99c5-4218-a741-37da285c4212",
+                                "mention_id_b":  "86bf984b-1d2a-4ab4-a006-0ff60bcbf1cc",
+                                "surface_a":  "Transporter",
+                                "surface_b":  "Launcher",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "e1a1d6a7-6f8a-4c98-a3d8-484055fcd6d2",
+                                "mention_a":  "Kn-25",
+                                "mention_b":  "Kn-24",
+                                "entity_type":  "ORG",
+                                "score":  0.7181,
+                                "reasons":  [
+                                                "cosine_sim=0.6829",
+                                                "levenshtein_sim=0.8000"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "88095633-c1a0-4a2f-899e-4e21722693fc",
+                                "mention_id_b":  "d486d430-135c-4f96-a154-b4d0bab4f648",
+                                "surface_a":  "Kn-25",
+                                "surface_b":  "Kn-24",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "23425aed-2d30-4387-a28f-7bf4d5051840",
+                                "mention_a":  "Kim Song Chol",
+                                "mention_b":  "Kim Hyok Chan",
+                                "entity_type":  "PERSON",
+                                "score":  0.7176,
+                                "reasons":  [
+                                                "cosine_sim=0.7944",
+                                                "levenshtein_sim=0.5385"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "7cdf805c-205e-4bde-b55c-d6a6e1c9262b",
+                                "mention_id_b":  "f3d0afaa-eb4c-47e7-97f4-3ab672513dac",
+                                "surface_a":  "Kim Song Chol",
+                                "surface_b":  "Kim Hyok Chan",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "117d01cc-a54d-40f1-b894-77d3c9a63a54",
+                                "mention_a":  "El Salvador",
+                                "mention_b":  "Ghana",
+                                "entity_type":  "LOCATION",
+                                "score":  0.7162,
+                                "reasons":  [
+                                                "cosine_sim=0.9452",
+                                                "levenshtein_sim=0.1818"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "0a5f327f-7ec1-4aa7-b62b-8380571ae129",
+                                "mention_id_b":  "3dfc8e3f-f553-4446-834d-c466c54977b7",
+                                "surface_a":  "El Salvador",
+                                "surface_b":  "Ghana",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "05e96639-6f4b-4332-bf49-34a9157b7baa",
+                                "mention_a":  "Bank Of East Land",
+                                "mention_b":  "Ilsim International Bank",
+                                "entity_type":  "ORG",
+                                "score":  0.7142,
+                                "reasons":  [
+                                                "cosine_sim=0.9310",
+                                                "levenshtein_sim=0.2083"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "ae119f51-b78b-4b2f-abc7-ee25282b04be",
+                                "mention_id_b":  "b9d3879d-d5bd-4ba3-8b6d-f06440a69e79",
+                                "surface_a":  "Bank Of East Land",
+                                "surface_b":  "Ilsim International Bank",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "34b74752-bf24-4e12-b7a7-a12dbe2016a0",
+                                "mention_a":  "Jo Chol Song",
+                                "mention_b":  "Aka Cho Ch’O’L-So’Ng",
+                                "entity_type":  "PERSON",
+                                "score":  0.7123,
+                                "reasons":  [
+                                                "cosine_sim=0.8675",
+                                                "levenshtein_sim=0.3500"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "fb094019-e9ad-4099-99b2-0a6ae97fd58e",
+                                "mention_id_b":  "b1becb54-9e40-4f3e-9ac7-e201edfbca07",
+                                "surface_a":  "Jo Chol Song",
+                                "surface_b":  "Aka Cho Ch’O’L-So’Ng",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            },
+                            {
+                                "candidate_id":  "9b6b118e-955f-4983-9b0e-b5909252995b",
+                                "mention_a":  "Saint Kitts And",
+                                "mention_b":  "Saint Vincent",
+                                "entity_type":  "PERSON",
+                                "score":  0.7113,
+                                "reasons":  [
+                                                "cosine_sim=0.7875",
+                                                "levenshtein_sim=0.5333"
+                                            ],
+                                "status":  "pending",
+                                "mention_id_a":  "858b230e-ee4c-4702-83cb-ae0bbba47c15",
+                                "mention_id_b":  "8974e6b0-43b6-417b-bb87-ecba73e1d481",
+                                "surface_a":  "Saint Kitts And",
+                                "surface_b":  "Saint Vincent",
+                                "analyst_note":  "Moderate-confidence alias candidate. Review provenance and context for possible false positives."
+                            }
+                        ],
+    "review_decisions":  [
+                             {
+                                 "decision_id":  "0878c6a3",
+                                 "candidate_id":  "0878c6a3-1dce-4ffb-9265-8f38206de8f2",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 2 aliases: Ri Eun Song ? Ri Un Song",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.8716
+                             },
+                             {
+                                 "decision_id":  "d07453e7",
+                                 "candidate_id":  "d07453e7-685c-47b4-af66-010732585bf6",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 2 aliases: November ? December",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.8098
+                             },
+                             {
+                                 "decision_id":  "a8048265",
+                                 "candidate_id":  "a8048265-87da-45af-8951-6b4927a58f1c",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 2 aliases: Jung Won ? Ri Jong Won",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7775
+                             },
+                             {
+                                 "decision_id":  "380eb02c",
+                                 "candidate_id":  "380eb02c-4fee-4040-b9b1-e4f573f61bb0",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 2 aliases: Belgium ? Belarus",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7683
+                             },
+                             {
+                                 "decision_id":  "fba333b9",
+                                 "candidate_id":  "fba333b9-8e82-43cf-ae09-88c1234db56c",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 2 aliases: Kum Un San ? Kum Un",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7638
+                             },
+                             {
+                                 "decision_id":  "77c59e15",
+                                 "candidate_id":  "77c59e15-1d73-429a-b46d-30707f764713",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 4 aliases: Mali ? Mauritius ? Lesotho +1 more",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7407
+                             },
+                             {
+                                 "decision_id":  "bb0365fb",
+                                 "candidate_id":  "bb0365fb-4461-464b-aee1-3d008bf25337",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 2 aliases: Poland ? Romania",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7372
+                             },
+                             {
+                                 "decision_id":  "d135d38a",
+                                 "candidate_id":  "d135d38a-da78-4349-9cdf-b8d2119d610c",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 2 aliases: Tongchang-ri ? Sohae",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7366
+                             },
+                             {
+                                 "decision_id":  "3af107ce",
+                                 "candidate_id":  "3af107ce-7d9f-4535-a26c-36c8c5906c52",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 2 aliases: Kim Sang Ho ? Kim Sangho",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7361
+                             },
+                             {
+                                 "decision_id":  "9b9c1590",
+                                 "candidate_id":  "9b9c1590-c813-4d26-aab0-f742c69541ed",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 3 aliases: Kn-25 ? Kn-24 ? Kn-23",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7263
+                             },
+                             {
+                                 "decision_id":  "158ec21e",
+                                 "candidate_id":  "158ec21e-bb87-4b65-a88b-a54ac958556a",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 3 aliases: Jamaica ? Kiribati ? Nampo",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7231
+                             },
+                             {
+                                 "decision_id":  "efbde4ef",
+                                 "candidate_id":  "efbde4ef-886f-4712-8b9b-9e1107299331",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 2 aliases: Pae ? Pae Won Uk",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7217
+                             },
+                             {
+                                 "decision_id":  "7e3fdbef",
+                                 "candidate_id":  "7e3fdbef-e788-4e73-a004-da1c960b72a8",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 2 aliases: Launcher ? Transporter",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7187
+                             },
+                             {
+                                 "decision_id":  "764bcab5",
+                                 "candidate_id":  "764bcab5-79a9-4f5f-ad21-a93f7d2812db",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 3 aliases: Kim Sou-Gwang ? Kim Su Gwang ? Kim Su-Kwang",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.717
+                             },
+                             {
+                                 "decision_id":  "aac851c8",
+                                 "candidate_id":  "aac851c8-64cb-4f45-a660-7e60bfd9d62a",
+                                 "reviewer":  "pipeline",
+                                 "decision":  "pending",
+                                 "notes":  "Cluster of 2 aliases: El Salvador ? Ghana",
+                                 "created_at":  "2026-03-09T05:53:00Z",
+                                 "cluster_score":  0.7162
+                             }
+                         ],
+    "manifest":  [
+                     {
+                         "doc_id":  "S-2010-571",
+                         "title":  "DPRK Panel of Experts Report 2010",
+                         "report_type":  "final",
+                         "report_date":  "2010-11-05",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N10/348/40/PDF/N1034840.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2012-422",
+                         "title":  "DPRK Panel of Experts Report 2012",
+                         "report_type":  "final",
+                         "report_date":  "2012-06-14",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N12/376/10/PDF/N1237610.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2013-337",
+                         "title":  "DPRK Panel of Experts Report 2013",
+                         "report_type":  "final",
+                         "report_date":  "2013-06-11",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N13/331/74/PDF/N1333174.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2014-147",
+                         "title":  "DPRK Panel of Experts Final Report 2014",
+                         "report_type":  "final",
+                         "report_date":  "2014-03-06",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N14/232/27/PDF/N1423227.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2015-131",
+                         "title":  "DPRK Panel of Experts Final Report 2015",
+                         "report_type":  "final",
+                         "report_date":  "2015-02-23",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N15/015/99/PDF/N1501599.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2016-157",
+                         "title":  "DPRK Panel of Experts Final Report 2016",
+                         "report_type":  "final",
+                         "report_date":  "2016-02-24",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N16/010/96/PDF/N1601096.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2017-150",
+                         "title":  "DPRK Panel of Experts Final Report 2017",
+                         "report_type":  "final",
+                         "report_date":  "2017-02-27",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N17/024/94/PDF/N1702494.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2017-742",
+                         "title":  "DPRK Panel of Experts Midterm Report 2017",
+                         "report_type":  "midterm",
+                         "report_date":  "2017-09-05",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N17/246/50/PDF/N1724650.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2018-171",
+                         "title":  "DPRK Panel of Experts Final Report 2018",
+                         "report_type":  "final",
+                         "report_date":  "2018-03-05",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N18/029/28/PDF/N1802928.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2019-171",
+                         "title":  "DPRK Panel of Experts Final Report 2019",
+                         "report_type":  "final",
+                         "report_date":  "2019-03-12",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N19/028/82/PDF/N1902882.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2019-691",
+                         "title":  "DPRK Panel of Experts Midterm Report 2019",
+                         "report_type":  "midterm",
+                         "report_date":  "2019-08-30",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N19/243/04/PDF/N1924304.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2020-151",
+                         "title":  "DPRK Panel of Experts Final Report 2020",
+                         "report_type":  "final",
+                         "report_date":  "2020-03-02",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N20/060/67/PDF/N2006067.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2020-840",
+                         "title":  "DPRK Panel of Experts Midterm Report 2020",
+                         "report_type":  "midterm",
+                         "report_date":  "2020-08-28",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N20/204/67/PDF/N2020467.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2021-211",
+                         "title":  "DPRK Panel of Experts Final Report 2021",
+                         "report_type":  "final",
+                         "report_date":  "2021-03-04",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N21/034/37/PDF/N2103437.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2021-777",
+                         "title":  "DPRK Panel of Experts Midterm Report 2021",
+                         "report_type":  "midterm",
+                         "report_date":  "2021-09-15",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N21/220/95/PDF/N2122095.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2022-132",
+                         "title":  "DPRK Panel of Experts Final Report 2022",
+                         "report_type":  "final",
+                         "report_date":  "2022-02-28",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N22/252/09/PDF/N2225209.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2022-668",
+                         "title":  "DPRK Panel of Experts Midterm Report 2022",
+                         "report_type":  "midterm",
+                         "report_date":  "2022-09-07",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N22/608/53/PDF/N2260853.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2023-171",
+                         "title":  "DPRK Panel of Experts Final Report 2023",
+                         "report_type":  "final",
+                         "report_date":  "2023-03-07",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N23/037/94/PDF/N2303794.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2023-656",
+                         "title":  "DPRK Panel of Experts Midterm Report 2023",
+                         "report_type":  "midterm",
+                         "report_date":  "2023-09-12",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N23/238/69/PDF/N2323869.PDF",
+                         "status":  "parsed"
+                     },
+                     {
+                         "doc_id":  "S-2024-171",
+                         "title":  "DPRK Panel of Experts Final Report 2024",
+                         "report_type":  "final",
+                         "report_date":  "2024-03-07",
+                         "source_url":  "https://documents.un.org/doc/UNDOC/GEN/N24/032/68/PDF/N2403268.PDF",
+                         "status":  "parsed"
+                     }
+                 ],
+    "summary":  {
+                    "total_mentions":  75685,
+                    "unique_entities":  23725,
+                    "total_candidates":  87,
+                    "total_clusters":  47,
+                    "total_reports":  20,
+                    "approved":  0,
+                    "pending":  30,
+                    "rejected":  0,
+                    "entity_type_counts":  {
+                                               "ORG":  46742,
+                                               "LOCATION":  18105,
+                                               "PERSON":  10838
+                                           }
+                },
+    "methodology":  {
+                        "overview":  {
+                                         "title":  "Mission brief for the sanctions intelligence dashboard",
+                                         "summary":  "Use the overview to decide where to focus first. The KPI cards tell you how much data has been ingested, the drift table shows which entities changed role fastest, and the charts show whether growth is coming from more mentions or more relationships.",
+                                         "tour_text":  "Start with the overview to size the corpus, scan the top drift table, and identify the entities or report years that deserve a deeper review."
+                                     },
+                        "entity-resolution":  {
+                                                  "title":  "How entity resolution works here",
+                                                  "summary":  "This view groups extracted mentions that may refer to the same actor. Scores are cues for analyst review, not automatic merge decisions. Always read the context and compare the supporting reasons before approving a candidate.",
+                                                  "tour_text":  "Click a mention, compare the alias candidates, and confirm whether the score is supported by the context and document provenance."
+                                              },
+                        "review-queue":  {
+                                             "title":  "How to use the review queue",
+                                             "summary":  "The queue highlights unresolved alias suggestions. Approve only when naming, context, and provenance align; reject when the score is driven by superficial string similarity or unrelated contexts.",
+                                             "tour_text":  "Work down the queue, use the reasons and context snippets to make a call, and leave uncertain pairs pending for later corroboration."
+                                         },
+                        "provenance":  {
+                                           "title":  "Why provenance matters",
+                                           "summary":  "Every mention and candidate should trace back to a report, page, and source URL. Provenance is the audit trail that lets another analyst reproduce your judgment.",
+                                           "tour_text":  "Use provenance to open the source document, verify the page-level context, and check whether the same actor appears consistently across reports."
+                                       }
+                    },
+    "glossary":  [
+                     {
+                         "term":  "Entity resolution",
+                         "definition":  "The process of deciding whether two mentions point to the same real-world actor.",
+                         "tabs":  [
+                                      "overview",
+                                      "entity-resolution",
+                                      "review-queue"
+                                  ]
+                     },
+                     {
+                         "term":  "Alias candidate",
+                         "definition":  "A pair of mentions surfaced for analyst review because the model sees enough similarity to merit inspection.",
+                         "tabs":  [
+                                      "entity-resolution",
+                                      "review-queue"
+                                  ]
+                     },
+                     {
+                         "term":  "Provenance",
+                         "definition":  "The report, page, and context window that justify why a mention or alert exists in the dashboard.",
+                         "tabs":  [
+                                      "overview",
+                                      "entity-resolution",
+                                      "review-queue",
+                                      "provenance"
+                                  ]
+                     }
+                 ],
+    "how_to_read":  {
+                        "overview":  [
+                                         "Use Total Mentions to gauge corpus size and Pending Review to gauge analyst workload.",
+                                         "A high-drift entity deserves attention only after you confirm the supporting source context.",
+                                         "Network growth can reflect new evidence, not just suspicious behavior."
+                                     ],
+                        "entity-resolution":  [
+                                                  "Click a mention to compare aliases side by side.",
+                                                  "Treat scores as a ranking aid; context and provenance decide the final judgment.",
+                                                  "Compare surface forms, supporting reasons, and the source document before approving."
+                                              ],
+                        "review-queue":  [
+                                             "Prioritize high-score pairs that appear across multiple reports.",
+                                             "Reject candidates that look similar in spelling but describe different entities or places.",
+                                             "Leave a pair pending if the provenance is thin or contradictory."
+                                         ],
+                        "provenance":  [
+                                           "Use the manifest to jump from a dashboard claim back to the original report.",
+                                           "The timeline helps you see when new actors or aliases first appear.",
+                                           "No alert should be trusted without a source report and page number."
+                                       ]
+                    },
+    "recommended_actions":  {
+                                "overview":  [
+                                                 "Open the top drift row first, then inspect the corresponding entity in Network Drift.",
+                                                 "If Pending Review is high, move to Review Queue before exploring lower-priority charts."
+                                             ],
+                                "entity-resolution":  [
+                                                          "Approve only when naming, context, and provenance all align.",
+                                                          "Use the review queue for ambiguous cases instead of forcing a merge."
+                                                      ],
+                                "review-queue":  [
+                                                     "Confirm a candidate with provenance, not just score.",
+                                                     "Record why a pair is rejected so similar false positives can be recognized later."
+                                                 ],
+                                "provenance":  [
+                                                   "Use the source URL to verify the report language around a mention before escalating.",
+                                                   "Cross-check whether the same alias appears in multiple years or only once."
+                                               ]
+                            }
+}

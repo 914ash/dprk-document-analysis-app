@@ -1,0 +1,72 @@
+[
+  {
+    "mention_id": "aaaa0001-0000-0000-0000-000000000001",
+    "doc_id": "TEST-001",
+    "page": 1,
+    "surface_form": "Korea Mining Development Corporation",
+    "normalized_form": "Korea Mining Development Corporation",
+    "entity_type": "ORG",
+    "context_left": "The Panel of Experts has identified",
+    "context_right": "continues to be the primary arms dealer",
+    "chunk_text": "Korea Mining Development Corporation continues to be the primary arms dealer.",
+    "embedding": null,
+    "model_name": "",
+    "created_at": "2024-01-01T00:00:00"
+  },
+  {
+    "mention_id": "aaaa0001-0000-0000-0000-000000000002",
+    "doc_id": "TEST-001",
+    "page": 1,
+    "surface_form": "KOMID",
+    "normalized_form": "Komid",
+    "entity_type": "ORG",
+    "context_left": "also known as",
+    "context_right": "has offices in multiple countries",
+    "chunk_text": "KOMID has offices in multiple countries.",
+    "embedding": null,
+    "model_name": "",
+    "created_at": "2024-01-01T00:00:00"
+  },
+  {
+    "mention_id": "aaaa0001-0000-0000-0000-000000000003",
+    "doc_id": "TEST-001",
+    "page": 1,
+    "surface_form": "Kim Chol Sam",
+    "normalized_form": "Kim Chol Sam",
+    "entity_type": "PERSON",
+    "context_left": "representative",
+    "context_right": "based in Dalian, China",
+    "chunk_text": "Kim Chol Sam, a KOMID representative based in Dalian, China.",
+    "embedding": null,
+    "model_name": "",
+    "created_at": "2024-01-01T00:00:00"
+  },
+  {
+    "mention_id": "aaaa0001-0000-0000-0000-000000000004",
+    "doc_id": "TEST-002",
+    "page": 2,
+    "surface_form": "Koryo Bank",
+    "normalized_form": "Koryo Bank",
+    "entity_type": "ORG",
+    "context_left": "",
+    "context_right": "a state-owned financial institution in Pyongyang",
+    "chunk_text": "Koryo Bank, a state-owned financial institution in Pyongyang.",
+    "embedding": null,
+    "model_name": "",
+    "created_at": "2024-01-01T00:00:00"
+  },
+  {
+    "mention_id": "aaaa0001-0000-0000-0000-000000000005",
+    "doc_id": "TEST-002",
+    "page": 3,
+    "surface_form": "Wise Honest",
+    "normalized_form": "Wise Honest",
+    "entity_type": "VESSEL",
+    "context_left": "The vessel",
+    "context_right": "flagged under various flags of convenience",
+    "chunk_text": "The vessel Wise Honest, flagged under various flags of convenience.",
+    "embedding": null,
+    "model_name": "",
+    "created_at": "2024-01-01T00:00:00"
+  }
+]

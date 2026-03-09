@@ -1,0 +1,28 @@
+cff-version: "1.2.0"
+message: "If you use this software, cite this project and include the RAND lineage."
+title: "DPRK Sanctions Intelligence Monorepo"
+version: "0.1.0"
+license: "MIT"
+type: software
+abstract: >
+  Public analyst toolkit for DPRK sanctions intelligence.
+  It includes entity resolution, review workflows,
+  and temporal network drift analysis.
+authors:
+  - name: "DPRK Sentinel contributors"
+    affiliation: "Public repository contributors"
+references:
+  - type: dataset
+    title: "Black Knights and Dark Network"
+    authors:
+      - name: "RAND Corporation"
+    url: "https://github.com/RANDCorporation/black-knights-and-dark-network/"
+    notes: >
+      This project derives its sanctions-graph framing and baseline corpus
+      lineage from this repository. We acknowledge this lineage and keep
+      public-source provenance in the pipeline.
+preferred-citation:
+  type: article
+  title: "DPRK Sanctions Intelligence Monorepo"
+  authors:
+    - name: "DPRK Sentinel contributors"

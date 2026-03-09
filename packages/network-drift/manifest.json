@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "drive_id": "703f43c6-f861-4d44-8268-1bc7696c9d8a",
+  "name": "dprk-network-drift",
+  "description": "DPRK Temporal Network Drift Engine — complete Python application for temporal graph analytics on sanctions-evasion networks",
+  "tags": [
+    "python",
+    "graph-analytics",
+    "networkx",
+    "node2vec",
+    "umap",
+    "plotly",
+    "dprk",
+    "temporal-graphs",
+    "drift-scoring"
+  ],
+  "created_at": "2026-03-09T03:59:01.685034+00:00",
+  "updated_at": "2026-03-09T03:59:01.685034+00:00",
+  "parent_project": null,
+  "sessions": [
+    {
+      "session_id": "959cff60-03f4-4c26-9a39-4067360ce9b1/subagents/build_project_2_dprk_network_drift_engine_20260309_034058",
+      "timestamp": "2026-03-09T03:59:01.685034+00:00",
+      "summary": "Built the complete DPRK Temporal Network Drift Engine at /home/user/workspace/dprk-network-drift/. All 49 Python files implemented with real working code. 165 tests pass (117 unit/structural/integration + 48 evals). Full pipeline: graph_build → slice → embed (Node2Vec+gensim) → reduce (UMAP) → score (5 drift signals) → visualize (Plotly HTML). Planted drift scenarios in fixtures all detected correctly."
+    }
+  ]
+}

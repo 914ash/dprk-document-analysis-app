@@ -1,0 +1,89 @@
+name: Public Release CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install package dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e "packages/entity-resolution[dev]"
+          python -m pip install -e "packages/network-drift[dev]"
+
+      - name: Run lint checks
+        run: |
+          python -m ruff check packages/entity-resolution/src packages/network-drift/src
+
+      - name: Run core tests
+        run: |
+          python -m pytest packages/entity-resolution/tests/unit/test_extract_adapters.py packages/entity-resolution/tests/unit/test_resolve_evidence.py -q
+          python -m pytest tests/test_dashboard_guidance.py -q
+          python -m pytest packages/network-drift/tests/unit -q
+
+      - name: Verify documentation and attribution
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          readme = Path("README.md").read_text(encoding="utf-8")
+          methodology = Path("docs/methodology.md").read_text(encoding="utf-8")
+          lineage = Path("docs/network-drift-lineage.md").read_text(encoding="utf-8")
+          citation = Path("CITATION.cff").read_text(encoding="utf-8")
+
+          required = {
+              "readme_rand": "https://github.com/RANDCorporation/black-knights-and-dark-network/",
+              "readme_section": "Credits and data provenance",
+              "methodology_rand": "Black Knights and Dark Network",
+              "methodology_note": "CITATION.cff",
+              "lineage_section": "Builds on RAND Dark Knights and Dark Network",
+              "citation_rand": "black-knights-and-dark-network"
+          }
+
+          if required["readme_rand"] not in readme:
+              raise SystemExit("README missing RAND attribution link.")
+          if required["readme_section"] not in readme:
+              raise SystemExit("README missing credits section.")
+          if required["methodology_rand"] not in methodology:
+              raise SystemExit("Methodology missing RAND attribution content.")
+          if required["methodology_note"] not in methodology:
+              raise SystemExit("Methodology missing citation reference.")
+          if required["lineage_section"] not in lineage:
+              raise SystemExit("Lineage doc missing RAND lineage section title.")
+          lineage_terms = [
+              "report manifest",
+              "mention extraction",
+              "entity resolution and aliasing",
+              "entity resolution/aliasing",
+              "edge construction",
+              "annual slices",
+              "embeddings and drift scoring",
+              "embeddings/scoring",
+              "drift ranking",
+              "dashboard interpretation",
+          ]
+          lineage_text = lineage.lower()
+          missing = [term for term in lineage_terms if term not in lineage_text]
+          if missing:
+              raise SystemExit(f"Lineage doc missing required chain terms: {', '.join(missing)}")
+          if required["citation_rand"] not in citation:
+              raise SystemExit("CITATION.cff missing RAND lineage acknowledgement.")
+
+          print("Documentation and attribution checks passed.")
+          PY
+
+      - name: Build docker images
+        run: |
+          docker compose build toolkit-api dashboard

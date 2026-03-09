@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  toolkit-api:
+    build:
+      context: .
+      dockerfile: ops/docker/toolkit/Dockerfile
+    image: dprk-sanctions-toolkit:latest
+    command: ["api"]
+    ports:
+      - "8000:8000"
+    volumes:
+      - dprk-data:/workspace/data
+    restart: unless-stopped
+
+  toolkit-runner:
+    build:
+      context: .
+      dockerfile: ops/docker/toolkit/Dockerfile
+    image: dprk-sanctions-toolkit:latest
+    volumes:
+      - dprk-data:/workspace/data
+    profiles:
+      - tools
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: ops/docker/dashboard/Dockerfile
+    image: dprk-dashboard:latest
+    ports:
+      - "8080:80"
+    depends_on:
+      - toolkit-api
+
+volumes:
+  dprk-data:
+    driver: local
