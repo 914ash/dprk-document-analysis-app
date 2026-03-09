@@ -1,0 +1,27 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="900" rx="32" fill="#111713"/>
+  <rect x="34" y="34" width="1372" height="832" rx="26" fill="#1A221C" stroke="#405245"/>
+  <rect x="72" y="84" width="918" height="724" rx="22" fill="#162019"/>
+  <rect x="1024" y="84" width="346" height="724" rx="22" fill="#202A23"/>
+  <text x="108" y="136" fill="#F0EEE8" font-size="26" font-family="'Courier New', monospace">network drift map</text>
+  <circle cx="274" cy="314" r="22" fill="#A6D788"/>
+  <circle cx="418" cy="242" r="18" fill="#A6D788"/>
+  <circle cx="540" cy="316" r="20" fill="#A6D788"/>
+  <circle cx="684" cy="256" r="18" fill="#A6D788"/>
+  <circle cx="794" cy="346" r="22" fill="#A6D788"/>
+  <path d="M274 314L418 242L540 316L684 256L794 346" stroke="#8CC66C" stroke-width="4"/>
+  <circle cx="318" cy="510" r="20" fill="#E08F6C"/>
+  <circle cx="478" cy="580" r="18" fill="#E08F6C"/>
+  <circle cx="618" cy="520" r="20" fill="#E08F6C"/>
+  <circle cx="770" cy="598" r="22" fill="#E08F6C"/>
+  <path d="M318 510L478 580L618 520L770 598" stroke="#D97D59" stroke-width="4"/>
+  <text x="1072" y="140" fill="#F0EEE8" font-size="24" font-family="'Courier New', monospace">annual slices</text>
+  <rect x="1054" y="184" width="286" height="104" rx="16" fill="#2A382D"/>
+  <rect x="1054" y="306" width="286" height="104" rx="16" fill="#2F3A2E"/>
+  <rect x="1054" y="428" width="286" height="104" rx="16" fill="#3A2F2A"/>
+  <rect x="1054" y="550" width="286" height="104" rx="16" fill="#402F2A"/>
+  <text x="1082" y="246" fill="#D7E1D2" font-size="18" font-family="'Courier New', monospace">embedding drift score</text>
+  <text x="1082" y="368" fill="#D7E1D2" font-size="18" font-family="'Courier New', monospace">cluster movement</text>
+  <text x="1082" y="490" fill="#E4D4CD" font-size="18" font-family="'Courier New', monospace">high-variance entities</text>
+  <text x="1082" y="612" fill="#E4D4CD" font-size="18" font-family="'Courier New', monospace">interpretation notes</text>
+</svg>
