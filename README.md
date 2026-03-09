@@ -1,7 +1,5 @@
 # DPRK Document Analysis App
 
-![DPRK analysis cover](assets/covers/cover.svg)
-
 Public DPRK sanctions-intelligence monorepo with three components: an analyst dashboard, an entity-resolution package, and a network-drift package for temporal graph analysis.
 
 ![Entity resolution view](assets/screenshots/entity-resolution-preview.svg)

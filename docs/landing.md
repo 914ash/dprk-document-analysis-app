@@ -1,7 +1,5 @@
 # DPRK Document Analysis App Landing
 
-![DPRK analysis cover](../assets/covers/cover.svg)
-
 ## What This Is
 
 `dprk-document-analysis-app` is a public sanctions-intelligence monorepo that combines entity-resolution workflows, network-drift analytics, and analyst-facing dashboard surfaces.
