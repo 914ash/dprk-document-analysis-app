@@ -2025,77 +2025,77 @@
     "documents":  [
                       {
                           "doc_id":  "DOC-001",
-                          "title":  "UN Panel of Experts Report 2020 — Supplementary 1",
+                          "title":  "UN Panel of Experts Report 2020 â€” Supplementary 1",
                           "report_date":  "2020-06-15 00:00:00",
                           "source":  "UN Panel of Experts",
                           "url":  "https://example.un.org/reports/dprk/2020/doc001"
                       },
                       {
                           "doc_id":  "DOC-002",
-                          "title":  "UN Panel of Experts Report 2021 — Supplementary 2",
+                          "title":  "UN Panel of Experts Report 2021 â€” Supplementary 2",
                           "report_date":  "2021-06-15 00:00:00",
                           "source":  "UN Panel of Experts",
                           "url":  "https://example.un.org/reports/dprk/2021/doc002"
                       },
                       {
                           "doc_id":  "DOC-003",
-                          "title":  "UN Panel of Experts Report 2022 — Supplementary 3",
+                          "title":  "UN Panel of Experts Report 2022 â€” Supplementary 3",
                           "report_date":  "2022-06-15 00:00:00",
                           "source":  "UN Panel of Experts",
                           "url":  "https://example.un.org/reports/dprk/2022/doc003"
                       },
                       {
                           "doc_id":  "DOC-004",
-                          "title":  "UN Panel of Experts Report 2023 — Supplementary 4",
+                          "title":  "UN Panel of Experts Report 2023 â€” Supplementary 4",
                           "report_date":  "2023-06-15 00:00:00",
                           "source":  "UN Panel of Experts",
                           "url":  "https://example.un.org/reports/dprk/2023/doc004"
                       },
                       {
                           "doc_id":  "DOC-005",
-                          "title":  "UN Panel of Experts Report 2019 — Supplementary 5",
+                          "title":  "UN Panel of Experts Report 2019 â€” Supplementary 5",
                           "report_date":  "2019-06-15 00:00:00",
                           "source":  "UN Panel of Experts",
                           "url":  "https://example.un.org/reports/dprk/2019/doc005"
                       },
                       {
                           "doc_id":  "DOC-006",
-                          "title":  "UN Panel of Experts Report 2020 — Supplementary 6",
+                          "title":  "UN Panel of Experts Report 2020 â€” Supplementary 6",
                           "report_date":  "2020-06-15 00:00:00",
                           "source":  "UN Panel of Experts",
                           "url":  "https://example.un.org/reports/dprk/2020/doc006"
                       },
                       {
                           "doc_id":  "DOC-007",
-                          "title":  "UN Panel of Experts Report 2021 — Supplementary 7",
+                          "title":  "UN Panel of Experts Report 2021 â€” Supplementary 7",
                           "report_date":  "2021-06-15 00:00:00",
                           "source":  "UN Panel of Experts",
                           "url":  "https://example.un.org/reports/dprk/2021/doc007"
                       },
                       {
                           "doc_id":  "DOC-008",
-                          "title":  "UN Panel of Experts Report 2022 — Supplementary 8",
+                          "title":  "UN Panel of Experts Report 2022 â€” Supplementary 8",
                           "report_date":  "2022-06-15 00:00:00",
                           "source":  "UN Panel of Experts",
                           "url":  "https://example.un.org/reports/dprk/2022/doc008"
                       },
                       {
                           "doc_id":  "DOC-009",
-                          "title":  "UN Panel of Experts Report 2023 — Supplementary 9",
+                          "title":  "UN Panel of Experts Report 2023 â€” Supplementary 9",
                           "report_date":  "2023-06-15 00:00:00",
                           "source":  "UN Panel of Experts",
                           "url":  "https://example.un.org/reports/dprk/2023/doc009"
                       },
                       {
                           "doc_id":  "DOC-010",
-                          "title":  "UN Panel of Experts Report 2019 — Supplementary 10",
+                          "title":  "UN Panel of Experts Report 2019 â€” Supplementary 10",
                           "report_date":  "2019-06-15 00:00:00",
                           "source":  "UN Panel of Experts",
                           "url":  "https://example.un.org/reports/dprk/2019/doc010"
                       },
                       {
                           "doc_id":  "DOC-011",
-                          "title":  "UN Panel of Experts Report 2020 — Supplementary 11",
+                          "title":  "UN Panel of Experts Report 2020 â€” Supplementary 11",
                           "report_date":  "2020-06-15 00:00:00",
                           "source":  "UN Panel of Experts",
                           "url":  "https://example.un.org/reports/dprk/2020/doc011"
