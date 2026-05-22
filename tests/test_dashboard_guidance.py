@@ -11,8 +11,8 @@ DASHBOARD_DIR = ROOT / "apps" / "dashboard"
 
 
 def test_dashboard_data_contains_guidance_sections() -> None:
-    entity_data = json.loads((DASHBOARD_DIR / "data" / "entity_resolution.json").read_text())
-    network_data = json.loads((DASHBOARD_DIR / "data" / "network_drift.json").read_text())
+    entity_data = json.loads((DASHBOARD_DIR / "data" / "entity_resolution.json").read_text(encoding="utf-8"))
+    network_data = json.loads((DASHBOARD_DIR / "data" / "network_drift.json").read_text(encoding="utf-8"))
 
     for payload in (entity_data, network_data):
         assert "methodology" in payload
@@ -22,8 +22,8 @@ def test_dashboard_data_contains_guidance_sections() -> None:
 
 
 def test_dashboard_contains_guided_tour_hooks() -> None:
-    index_html = (DASHBOARD_DIR / "index.html").read_text()
-    app_js = (DASHBOARD_DIR / "app.js").read_text()
+    index_html = (DASHBOARD_DIR / "index.html").read_text(encoding="utf-8")
+    app_js = (DASHBOARD_DIR / "app.js").read_text(encoding="utf-8")
 
     assert "guided-tour" in index_html
     assert "launchGuidedTour" in app_js
