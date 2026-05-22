@@ -24,7 +24,7 @@ The repo keeps method, source lineage and reviewer-facing output in one surface.
 - `packages/network-drift`: temporal graph slicing and drift analysis
 - `docs/`: landing notes, methodology, lineage and data-policy documentation
 
-## Data provenance and attribution
+## Credits and data provenance
 
 This project reuses and extends material from [Black Knights and Dark Network](https://github.com/RANDCorporation/black-knights-and-dark-network/) by RAND Corporation. Output lineage keeps source-link attachment and the public repo preserves attribution explicitly.
 
